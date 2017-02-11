@@ -1,16 +1,13 @@
 package org.usfirst.frc.team6239.robot;
 
-<<<<<<< HEAD
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-=======
 
 import org.usfirst.frc.team6239.robot.commands.DumpDownCommand;
 import org.usfirst.frc.team6239.robot.commands.DumpUpCommand;
 
 import edu.wpi.first.wpilibj.buttons.Button;
->>>>>>> 0eaf462aad9b02f7f56b8c2f7333a92928940dfb
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -24,13 +21,6 @@ public class OI {
 	public Object stickcontrolerL;
 	public Object stickcontrolerR;
 
-	public OI() {
-		gamepad = new Joystick(0);
-		LeftJoystick = new JoystickButton(gamepad, 0);
-		RightJoystick = new JoystickButton(gamepad, 1); 
-				
-	}
-	
 	
     //// CREATING BUTTONS
     // One type of button is a joystick button which is any button on a joystick.
@@ -58,15 +48,16 @@ public class OI {
     // Start the command when the button is released  and let it run the command
     // until it is finished as determined by it's isFinished method.
     // button.whenReleased(new ExampleCommand());
-<<<<<<< HEAD
-=======
+
 	Button DumpUp;
 	Button DumpDown;
 	public OI() {
 		DumpUp.whenPressed(new DumpUpCommand());
 		DumpDown.whenPressed(new DumpDownCommand());
-	}
+		gamepad = new Joystick(0);
+		LeftJoystick = new JoystickButton(gamepad, 0);
+		RightJoystick = new JoystickButton(gamepad, 1); 
+	
 }
->>>>>>> 0eaf462aad9b02f7f56b8c2f7333a92928940dfb
 
 }

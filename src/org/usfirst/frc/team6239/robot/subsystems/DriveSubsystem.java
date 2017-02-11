@@ -1,23 +1,21 @@
 
 package org.usfirst.frc.team6239.robot.subsystems;
 
-import edu.wpi.first.wpilibj.Talon;
-import edu.wpi.first.wpilibj.command.Subsystem;
-
 import org.usfirst.frc.team6239.robot.Robot;
+import org.usfirst.frc.team6239.robot.commands.DriveCommand;
 
+import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class DriveSubsystem extends Subsystem {
     
-    private static final int LeftTalon1 = 0;
-	private static final double Rightspeed = 0;
+
 
 	// Put methods for controlling this subsystem
     // here. Call these from Commands.
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new DriveCommand());
     	
 		
     }

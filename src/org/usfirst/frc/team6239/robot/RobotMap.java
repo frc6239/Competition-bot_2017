@@ -18,7 +18,6 @@ public class RobotMap {
     // number and the module. For example you with a rangefinder:
     // public static int rangefinderPort = 1;
     // public static int rangefinderModule = 1;
-<<<<<<< HEAD
 
 
 	public static int LeftTalon1 = 1;
@@ -40,16 +39,12 @@ public class RobotMap {
 		LeftController2 = new Talon(LeftTalon2);
 		RightController1 = new Talon(RightTalon1);
 		RightController2 = new Talon(RightTalon2);
-	}}
-=======
+		DumpTalon = new Talon(DumpTalonPort);
+	}
 	public static int DumpTalonPort = 0;
 	public Talon DumpTalon;
 	public boolean limitswitch1;
 	public boolean limitswitch2;
 	public boolean dumperUp;
 	
-	public RobotMap() {
-		DumpTalon = new Talon(DumpTalonPort);
-	}
 }
->>>>>>> 0eaf462aad9b02f7f56b8c2f7333a92928940dfb
