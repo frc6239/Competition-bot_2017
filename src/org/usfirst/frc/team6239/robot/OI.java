@@ -1,8 +1,16 @@
 package org.usfirst.frc.team6239.robot;
 
+<<<<<<< HEAD
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
+=======
+
+import org.usfirst.frc.team6239.robot.commands.DumpDownCommand;
+import org.usfirst.frc.team6239.robot.commands.DumpUpCommand;
+
+import edu.wpi.first.wpilibj.buttons.Button;
+>>>>>>> 0eaf462aad9b02f7f56b8c2f7333a92928940dfb
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -36,7 +44,7 @@ public class OI {
     // commands the same as any other Button.
     
     //// TRIGGERING COMMANDS WITH BUTTONS
-    // Once you have a button, it's trivial to bind it to a button in one of
+    // Once you have a button, it's trivial to bind it to a 
     // three ways:
     
     // Start the command when the button is pressed and let it run the command
@@ -50,5 +58,15 @@ public class OI {
     // Start the command when the button is released  and let it run the command
     // until it is finished as determined by it's isFinished method.
     // button.whenReleased(new ExampleCommand());
+<<<<<<< HEAD
+=======
+	Button DumpUp;
+	Button DumpDown;
+	public OI() {
+		DumpUp.whenPressed(new DumpUpCommand());
+		DumpDown.whenPressed(new DumpDownCommand());
+	}
+}
+>>>>>>> 0eaf462aad9b02f7f56b8c2f7333a92928940dfb
 
 }

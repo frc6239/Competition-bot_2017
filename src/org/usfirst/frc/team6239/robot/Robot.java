@@ -1,9 +1,13 @@
 
 package org.usfirst.frc.team6239.robot;
 
+
+import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub;
+
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.IterativeRobot;
-import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
+<<<<<<< HEAD
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
@@ -12,6 +16,8 @@ import org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem;
 
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+=======
+>>>>>>> 0eaf462aad9b02f7f56b8c2f7333a92928940dfb
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -21,6 +27,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * directory.
  */
 public class Robot extends IterativeRobot {
+<<<<<<< HEAD
 
 /*	public class robotmap {
 
@@ -34,10 +41,46 @@ public class Robot extends IterativeRobot {
 	public static DriveSubsystem DRIVE_SUB;
 	public static OI oi;
 	public static RobotMap robotmap;
+=======
+	
+	public static OI oi;
+	public static DumpLiftSub dump_lift;
+	public static RobotMap robotmap;
+	public static DigitalInput limitswitch1;
+	public static DigitalInput limitswitch2;
+	
+	public void robotInit() {
+		oi = new OI();
+		dump_lift = new DumpLiftSub();
+		robotmap = new RobotMap();
+		limitswitch1 = new DigitalInput(0);
+		limitswitch2 = new DigitalInput(1);
+				
+	}
 
-    Command autonomousCommand;
-    SendableChooser chooser;
 
+	public void disabledInit() {
+		
+	}
+
+
+	public void autonomousInit() {
+		
+	}
+
+
+	public void teleopInit() {
+		
+	}
+
+
+	public void robotPeriodic() {
+		
+	}
+>>>>>>> 0eaf462aad9b02f7f56b8c2f7333a92928940dfb
+
+
+<<<<<<< HEAD
     /**
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
@@ -59,63 +102,23 @@ public class Robot extends IterativeRobot {
 
     }
 	
+=======
+>>>>>>> 0eaf462aad9b02f7f56b8c2f7333a92928940dfb
 	public void disabledPeriodic() {
 		Scheduler.getInstance().run();
 	}
 
-	/**
-	 * This autonomous (along with the chooser code above) shows how to select between different autonomous modes
-	 * using the dashboard. The sendable chooser code works with the Java SmartDashboard. If you prefer the LabVIEW
-	 * Dashboard, remove all of the chooser code and uncomment the getString code to get the auto name from the text box
-	 * below the Gyro
-	 *
-	 * You can add additional auto modes by adding additional commands to the chooser code above (like the commented example)
-	 * or additional comparisons to the switch structure below with additional strings & commands.
-	 */
-    public void autonomousInit() {
-        autonomousCommand = (Command) chooser.getSelected();
-        
-		/* String autoSelected = SmartDashboard.getString("Auto Selector", "Default");
-		switch(autoSelected) {
-		case "My Auto":
-			autonomousCommand = new MyAutoCommand();
-			break;
-		case "Default Auto":
-		default:
-			autonomousCommand = new ExampleCommand();
-			break;
-		} */
-    	
-    	// schedule the autonomous command (example)
-        if (autonomousCommand != null) autonomousCommand.start();
-    }
 
-    /**
-     * This function is called periodically during autonomous
-     */
-    public void autonomousPeriodic() {
-        Scheduler.getInstance().run();
-    }
+	public void autonomousPeriodic() {
+		Scheduler.getInstance().run();
+	}
 
-    public void teleopInit() {
-		// This makes sure that the autonomous stops running when
-        // teleop starts running. If you want the autonomous to 
-        // continue until interrupted by another command, remove
-        // this line or comment it out.
-        if (autonomousCommand != null) autonomousCommand.cancel();
-    }
 
-    /**
-     * This function is called periodically during operator control
-     */
-    public void teleopPeriodic() {
-        Scheduler.getInstance().run();
-    }
-    
-    /**
-     * This function is called periodically during test mode
-     */
-    public void testPeriodic() {
-        LiveWindow.run();
-    }
+	public void teleopPeriodic() {
+		Scheduler.getInstance().run();
+		Robot.robotmap.limitswitch1 = Robot.limitswitch1.get();
+		Robot.robotmap.limitswitch2 = Robot.limitswitch2.get();
+	}
+	
+	
 }
