@@ -5,14 +5,23 @@ import org.usfirst.frc.team6239.robot.Robot;
 import org.usfirst.frc.team6239.robot.commands.DriveCommand;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.networktables.NetworkTable;
 
 public class DriveSubsystem extends Subsystem {
-    
-
-
-	// Put methods for controlling this subsystem
-    // here. Call these from Commands.
-
+    	
+	
+	public enum DriveConfig {
+    	left,
+    	right,
+    	none
+    }
+	
+	DriveConfig drive_config;
+	
+	public DriveSubsystem(DriveConfig drive_config) {
+		
+	}
+	
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         setDefaultCommand(new DriveCommand());
@@ -22,10 +31,12 @@ public class DriveSubsystem extends Subsystem {
     
     public void tank (double Leftspeed, double Rightspeed){ 
 
-  			   Robot.robotmap.LeftController1.set(Leftspeed);
-  			   Robot.robotmap.LeftController2.set(Leftspeed);
-  			   Robot.robotmap.RightController1.set(Leftspeed);
-  			   Robot.robotmap.RightController2.set(Leftspeed);
+    	
+
+        Robot.robotmap.LeftController1.set(Leftspeed);
+        Robot.robotmap.LeftController2.set(Leftspeed);
+  		Robot.robotmap.RightController1.set(Leftspeed);
+  		Robot.robotmap.RightController2.set(Leftspeed);
 
    
 			
@@ -57,7 +68,19 @@ public class DriveSubsystem extends Subsystem {
 	 	   Robot.robotmap.RightController2.set(Leftspeed);
 	 	   
 	 	   }
+	 }
 }
-    }}
+    public void DriveAuto() {
+    	
+    	System.out.println(NetworkTable.getTable("Robot").getValue("SideChooser", DriveConfig.none));
+    	
+    }
+}
     
+
+
+
+
+
+
 

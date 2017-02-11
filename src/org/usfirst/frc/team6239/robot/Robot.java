@@ -7,13 +7,9 @@ import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
-import org.usfirst.frc.team6239.robot.commands.DriveCommand;
 import org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem;
 
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
@@ -41,13 +37,20 @@ public class Robot extends IterativeRobot {
 	public static RobotMap robotmap;
 	public static DigitalInput limitswitch1;
 	public static DigitalInput limitswitch2;
+    public static SmartDashboard smartDashboard;
+
+
 	
+	@SuppressWarnings("deprecation")
 	public void robotInit() {
 		oi = new OI();
 		dump_lift = new DumpLiftSub();
 		robotmap = new RobotMap();
 		limitswitch1 = new DigitalInput(0);
 		limitswitch2 = new DigitalInput(1);
+		smartDashboard = new SmartDashboard();
+		smartDashboard.getRaw("DriveSide");
+
 				
 	}
 
@@ -77,6 +80,8 @@ public class Robot extends IterativeRobot {
 
 	public void autonomousPeriodic() {
 		Scheduler.getInstance().run();
+		Robot.DRIVE_SUB.DriveAuto();
+		
 	}
 
 
