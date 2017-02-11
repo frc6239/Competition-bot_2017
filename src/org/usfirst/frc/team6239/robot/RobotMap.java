@@ -1,4 +1,7 @@
 package org.usfirst.frc.team6239.robot;
+
+import edu.wpi.first.wpilibj.Talon;
+
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
@@ -15,4 +18,25 @@ public class RobotMap {
     // number and the module. For example you with a rangefinder:
     // public static int rangefinderPort = 1;
     // public static int rangefinderModule = 1;
-}
+
+
+	public static int LeftTalon1 = 1;
+	public static int LeftTalon2 = 2;
+	public static int RightTalon1 = 3;
+	public static int RightTalon2 = 4;
+	
+	
+	
+	
+	public Talon LeftController1;
+	public Talon LeftController2;
+	public Talon RightController1;
+	public Talon RightController2;
+	
+	public RobotMap() {
+		
+		LeftController1 = new Talon(LeftTalon1);
+		LeftController2 = new Talon(LeftTalon2);
+		RightController1 = new Talon(RightTalon1);
+		RightController2 = new Talon(RightTalon2);
+	}}
