@@ -8,6 +8,8 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 import org.usfirst.frc.team6239.robot.commands.DriveCommand;
+import org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem;
+
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -20,8 +22,18 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Robot extends IterativeRobot {
 
-	public static final org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem DriveSubsystem = new org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem();
+/*	public class robotmap {
+
+		public static Object LeftController1;
+		public static Object LeftController2;
+		public static Object RightController1;
+		public static Object RightController2;
+
+	}
+*/
+	public static DriveSubsystem DRIVE_SUB;
 	public static OI oi;
+	public static RobotMap robotmap;
 
     Command autonomousCommand;
     SendableChooser chooser;

@@ -12,11 +12,21 @@ public class DriveCommand extends Command {
 
     public DriveCommand() {
         // Use requires() here to declare subsystem dependencies
-        requires(Robot.DriveSubsystem);
+        requires(Robot.DRIVE_SUB);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	double LeftGamepadJoystickspeed =  Robot.oi.gamepad.getRawAxis(1);
+    	double RightGamepadJoystickspeed =  Robot.oi.gamepad.getRawAxis(5);
+    	Robot.DRIVE_SUB.tank(LeftGamepadJoystickspeed, RightGamepadJoystickspeed);
+    	  
+	    double LeftJoystickspeed = Robot.oi.gamepad.getRawAxis(1);
+        double RightJoystickspeed = Robot.oi.gamepad.getRawAxis(1);
+        Robot.DRIVE_SUB.arcade(LeftJoystickspeed,RightJoystickspeed);
+    
+    
+    
     }
 
     // Called repeatedly when this Command is scheduled to run
