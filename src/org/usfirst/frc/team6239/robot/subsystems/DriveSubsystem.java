@@ -70,9 +70,12 @@ public class DriveSubsystem extends Subsystem {
 	 	   }
 	 }
 }
-    public void DriveAuto() {
+    public void DrivePeg() {
     	
-    	System.out.println(NetworkTable.getTable("Robot").getValue("SideChooser", DriveConfig.none));
+    	DriveConfig drive_config = (DriveConfig) NetworkTable.getTable("Robot").getValue("SideChooser", DriveConfig.none);
+    	if (Robot.robotmap.isSeen) {
+    		
+    	}
     	
     }
 }

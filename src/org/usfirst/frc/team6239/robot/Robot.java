@@ -41,7 +41,6 @@ public class Robot extends IterativeRobot {
 
 
 	
-	@SuppressWarnings("deprecation")
 	public void robotInit() {
 		oi = new OI();
 		dump_lift = new DumpLiftSub();
@@ -49,8 +48,6 @@ public class Robot extends IterativeRobot {
 		limitswitch1 = new DigitalInput(0);
 		limitswitch2 = new DigitalInput(1);
 		smartDashboard = new SmartDashboard();
-		smartDashboard.getRaw("DriveSide");
-
 				
 	}
 

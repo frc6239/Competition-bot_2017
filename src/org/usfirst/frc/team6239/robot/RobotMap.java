@@ -46,5 +46,6 @@ public class RobotMap {
 	public boolean limitswitch1;
 	public boolean limitswitch2;
 	public boolean dumperUp;
+	public boolean isSeen;
 	
 }
