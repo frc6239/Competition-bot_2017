@@ -4,7 +4,10 @@ package org.usfirst.frc.team6239.robot;
 
 import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub;
 
+import com.kauailabs.navx.frc.AHRS;
+
 import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.I2C.Port;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
 
@@ -38,6 +41,7 @@ public class Robot extends IterativeRobot {
 	public static DigitalInput limitswitch1;
 	public static DigitalInput limitswitch2;
     public static SmartDashboard smartDashboard;
+    public static AHRS ahrs;
 
 
 	
@@ -48,6 +52,7 @@ public class Robot extends IterativeRobot {
 		limitswitch1 = new DigitalInput(0);
 		limitswitch2 = new DigitalInput(1);
 		smartDashboard = new SmartDashboard();
+		ahrs = new AHRS(Port.kMXP);
 				
 	}
 
@@ -77,8 +82,7 @@ public class Robot extends IterativeRobot {
 
 	public void autonomousPeriodic() {
 		Scheduler.getInstance().run();
-		Robot.DRIVE_SUB.DrivePeg();
-		
+		Robot.robotmap.curAngle = ahrs.getAngle();
 	}
 
 

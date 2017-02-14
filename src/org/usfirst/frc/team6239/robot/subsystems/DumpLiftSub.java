@@ -14,7 +14,7 @@ public class DumpLiftSub extends Subsystem{
 	
 	public void DumpUp() {
 		Robot.robotmap.DumpTalon.set(1);	
-		while (Robot.robotmap.limitswitch1) {
+		if (Robot.robotmap.limitswitch1) {
 			Robot.robotmap.DumpTalon.set(0);
 			Robot.robotmap.dumperUp = true;
 		}
@@ -22,7 +22,7 @@ public class DumpLiftSub extends Subsystem{
 	}
 	public void DumpDown() {
 		Robot.robotmap.DumpTalon.set(1);
-		while (Robot.robotmap.limitswitch2) {
+		if (Robot.robotmap.limitswitch2) {
 			Robot.robotmap.DumpTalon.set(0);
 			Robot.robotmap.dumperUp = false;
 		}

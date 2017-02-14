@@ -5,20 +5,13 @@ import org.usfirst.frc.team6239.robot.Robot;
 import org.usfirst.frc.team6239.robot.commands.DriveCommand;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.networktables.NetworkTable;
 
 public class DriveSubsystem extends Subsystem {
     	
 	
-	public enum DriveConfig {
-    	left,
-    	right,
-    	none
-    }
 	
-	DriveConfig drive_config;
 	
-	public DriveSubsystem(DriveConfig drive_config) {
+	public DriveSubsystem() {
 		
 	}
 	
@@ -35,8 +28,8 @@ public class DriveSubsystem extends Subsystem {
 
         Robot.robotmap.LeftController1.set(Leftspeed);
         Robot.robotmap.LeftController2.set(Leftspeed);
-  		Robot.robotmap.RightController1.set(Leftspeed);
-  		Robot.robotmap.RightController2.set(Leftspeed);
+  		Robot.robotmap.RightController1.set(Rightspeed);
+  		Robot.robotmap.RightController2.set(Rightspeed);
 
    
 			
@@ -70,13 +63,13 @@ public class DriveSubsystem extends Subsystem {
 	 	   }
 	 }
 }
-    public void DrivePeg() {
+    public void TurnLeft(double Leftspeed, double Rightspeed) {
+    	tank(-Leftspeed, Rightspeed);
     	
-    	DriveConfig drive_config = (DriveConfig) NetworkTable.getTable("Robot").getValue("SideChooser", DriveConfig.none);
-    	if (Robot.robotmap.isSeen) {
-    		
-    	}
-    	
+    }
+    
+    public void TurnRight(double Leftspeed, double Rightspeed) {
+    	tank(Leftspeed, -Rightspeed);
     }
 }
     
