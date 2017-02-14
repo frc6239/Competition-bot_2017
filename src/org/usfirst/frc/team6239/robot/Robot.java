@@ -77,7 +77,7 @@ public class Robot extends IterativeRobot {
 
 	public void autonomousPeriodic() {
 		Scheduler.getInstance().run();
-		Robot.DRIVE_SUB.DriveAuto();
+		Robot.DRIVE_SUB.DrivePeg();
 		
 	}
 
