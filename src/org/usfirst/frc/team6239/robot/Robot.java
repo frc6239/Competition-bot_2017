@@ -4,6 +4,8 @@ package org.usfirst.frc.team6239.robot;
 
 import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub;
 import org.usfirst.frc.team6239.robot.subsystems.RollerAccelerator;
+import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
+import org.usfirst.frc.team6239.robot.subsystems.VisionSub;
 
 import com.kauailabs.navx.frc.AHRS;
 
@@ -43,6 +45,8 @@ public class Robot extends IterativeRobot {
     public static SmartDashboard smartDashboard;
     public static AHRS ahrs;
     public static RollerAccelerator rolleraccel;
+    public static RollerGrabberSub rollergrabber;
+    public static VisionSub vision;
 
 
 	
@@ -55,6 +59,8 @@ public class Robot extends IterativeRobot {
 		limitswitch2 = new DigitalInput(1);
 		smartDashboard = new SmartDashboard();
 		ahrs = new AHRS(Port.kMXP);
+		rollergrabber = new RollerGrabberSub();
+		vision = new VisionSub();
 				
 	}
 
@@ -92,6 +98,7 @@ public class Robot extends IterativeRobot {
 		Scheduler.getInstance().run();
 		Robot.robotmap.limitswitch1 = Robot.limitswitch1.get();
 		Robot.robotmap.limitswitch2 = Robot.limitswitch2.get();
+		Robot.robotmap.driving = Robot.ahrs.isMoving();
 	}
 	
 	

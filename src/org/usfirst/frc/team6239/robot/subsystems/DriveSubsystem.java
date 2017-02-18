@@ -32,7 +32,7 @@ public class DriveSubsystem extends Subsystem {
 
 	}
 
-	/*public void arcade(double Leftspeed, double Rightspeed) {
+	public void arcade(double Leftspeed, double Rightspeed) {
 		if (Rightspeed > 0.0) {
 
 			Robot.robotmap.LeftController1.set(Leftspeed + Rightspeed);
@@ -58,7 +58,7 @@ public class DriveSubsystem extends Subsystem {
 
 			}
 		}
-	}*/
+	}
 
 
 	public void DriveRobot(double Leftspeed, double Rightspeed) {
@@ -151,13 +151,14 @@ public class DriveSubsystem extends Subsystem {
 	}
 
 
-	/*public void TurnLeft(double Leftspeed, double Rightspeed) {
+	public void TurnLeft(double Leftspeed, double Rightspeed) {
 		tank(-Leftspeed, Rightspeed);
 	}
 
 	public void TurnRight(double Leftspeed, double Rightspeed) {
-		tank(Leftspeed, -Rightspeed);*/
+		tank(Leftspeed, -Rightspeed);
 	}
+}
 
 
 

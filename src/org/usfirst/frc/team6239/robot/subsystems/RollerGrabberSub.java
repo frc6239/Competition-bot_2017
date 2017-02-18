@@ -14,7 +14,7 @@ public class RollerGrabberSub extends Subsystem {
     }
     public void RollerFront() {
         Robot.robotmap.RollerGrabTal.set(1);
-        if (Robot.robotmap.dumperUp || !Robot.robotmap.drivingFront) {
+        if (Robot.robotmap.dumperUp || !Robot.robotmap.driving) {
             RollerBack();
         }
 
