@@ -1,5 +1,7 @@
 package org.usfirst.frc.team6239.robot;
 
+import com.ctre.CANTalon; 
+import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Talon;
 
 /**
@@ -36,23 +38,23 @@ public class RobotMap {
 
 	
 	
-	public Talon DumpTalon;
-	public Talon LeftController1;
-	public Talon LeftController2;
-	public Talon RightController1;
-	public Talon RightController2;
-	public Talon RollerAccelTal;
-	public Talon RollerGrabTal;
+	public CANTalon DumpTalon;
+	public Spark LeftController1;
+	public Spark LeftController2;
+	public Spark RightController1;
+	public Spark RightController2;
+	public CANTalon RollerAccelTal;
+	public CANTalon RollerGrabTal;
 	
 	public RobotMap() {
 		
-		LeftController1 = new Talon(LeftTalon1);
-		LeftController2 = new Talon(LeftTalon2);
-		RightController1 = new Talon(RightTalon1);
-		RightController2 = new Talon(RightTalon2);
-		DumpTalon = new Talon(DumpTalonPort);
-		RollerAccelTal = new Talon(RollerTal);
-		RollerGrabTal = new Talon(RollerGrab);
+		LeftController1 = new Spark(LeftTalon1);
+		LeftController2 = new Spark(LeftTalon2);
+		RightController1 = new Spark(RightTalon1);
+		RightController2 = new Spark(RightTalon2);
+		DumpTalon = new CANTalon(DumpTalonPort);
+		RollerAccelTal = new CANTalon(RollerTal);
+		RollerGrabTal = new CANTalon(RollerGrab);
 	}
 	
 }

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="EclipseModuleManager">
+    <libelement value="jar://$USER_HOME$/wpilib/user/java/lib/CTRLib.jar!/" />
+    <libelement value="jar://$USER_HOME$/wpilib/user/java/lib/navx_frc.jar!/" />
     <varelement var="file://$wpilib$" value="wpilib" />
     <varelement var="file://$wpilib.sources$" value="src:wpilib.sources" />
     <varelement var="file://$networktables$" value="networktables" />
@@ -79,7 +81,25 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="CTRLib.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/wpilib/user/java/lib/CTRLib.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="$USER_HOME$/wpilib/user/java/lib/navx_frc.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/wpilib/user/java/lib/navx_frc.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="cscore-sources" level="project" />
-    <orderEntry type="library" name="navx_frc" level="project" />
+    <orderEntry type="library" name="CTRLib" level="project" />
   </component>
 </module>
