@@ -15,6 +15,7 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import org.usfirst.frc.team6239.robot.subsystems.VisionSub;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -44,6 +45,7 @@ public class Robot extends IterativeRobot {
     public static SmartDashboard smartDashboard;
     public static AHRS ahrs;
     public static RollerAccelerator rolleraccel;
+    public static VisionSub vision;
 
 
 	
@@ -56,6 +58,7 @@ public class Robot extends IterativeRobot {
 		limitswitch2 = new DigitalInput(1);
 		smartDashboard = new SmartDashboard();
 		ahrs = new AHRS(Port.kMXP);
+		vision = new VisionSub();
 				
 	}
 

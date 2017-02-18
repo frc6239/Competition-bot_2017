@@ -75,5 +75,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="cscore-sources" level="project" />
+    <orderEntry type="library" name="navx_frc" level="project" />
   </component>
 </module>
