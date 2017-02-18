@@ -8,7 +8,6 @@ import org.usfirst.frc.team6239.robot.commands.DumpDownCommand;
 import org.usfirst.frc.team6239.robot.commands.DumpUpCommand;
 
 import edu.wpi.first.wpilibj.buttons.Button;
-import org.usfirst.frc.team6239.robot.commands.VisionCommand;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -19,8 +18,8 @@ public class OI {
 	public Joystick gamepad;
 	public Button LeftJoystick;
 	public Button RightJoystick;
-//	public Object stickcontrolerL;
-//	public Object stickcontrolerR;
+	public Object stickcontrolerL;
+	public Object stickcontrolerR;
 
 	
     //// CREATING BUTTONS
@@ -52,20 +51,13 @@ public class OI {
 
 	Button DumpUp;
 	Button DumpDown;
-	Button CancelVision;
 	public OI() {
-		gamepad = new Joystick(0);
-		LeftJoystick = new JoystickButton(gamepad, 0);
-		RightJoystick = new JoystickButton(gamepad, 1);
-
-		DumpDown = new JoystickButton(gamepad, 0);
-		DumpUp = new JoystickButton(gamepad, 1);
-		CancelVision = new JoystickButton(gamepad, 2);
-
 		DumpUp.whenPressed(new DumpUpCommand());
 		DumpDown.whenPressed(new DumpDownCommand());
-		CancelVision.cancelWhenPressed(new VisionCommand());
-
-	}
+		gamepad = new Joystick(0);
+		LeftJoystick = new JoystickButton(gamepad, 0);
+		RightJoystick = new JoystickButton(gamepad, 1); 
+	
+}
 
 }

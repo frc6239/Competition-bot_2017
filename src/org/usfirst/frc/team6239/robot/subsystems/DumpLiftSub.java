@@ -6,17 +6,17 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class DumpLiftSub extends Subsystem{
 
-	@Override
+
 	protected void initDefaultCommand() {
-		// TODO Auto-generated method stub
+
 		
 	}
 	
 	public void DumpUp() {
-		Robot.robotmap.DumpTalon.set(1);
-		Robot.robotmap.dumperUp = true;
+		Robot.robotmap.DumpTalon.set(1);	
 		if (Robot.robotmap.limitswitch1) {
 			Robot.robotmap.DumpTalon.set(0);
+			Robot.robotmap.dumperUp = true;
 		}
 		
 	}

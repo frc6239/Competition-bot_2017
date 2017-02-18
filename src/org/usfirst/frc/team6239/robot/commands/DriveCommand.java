@@ -24,8 +24,9 @@ public class DriveCommand extends Command {
 	    double LeftJoystickspeed = Robot.oi.gamepad.getRawAxis(1);
         double RightJoystickspeed = Robot.oi.gamepad.getRawAxis(1);
         Robot.DRIVE_SUB.arcade(LeftJoystickspeed,RightJoystickspeed);
-
-
+    
+    
+    
     }
 
     // Called repeatedly when this Command is scheduled to run

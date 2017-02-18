@@ -11,7 +11,6 @@ public class DumpUpCommand extends Command{
 	}
 	
 	protected void execute() {
-
 		Robot.dump_lift.DumpUp();
 	}
 	
