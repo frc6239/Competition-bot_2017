@@ -10,10 +10,8 @@ public class RollerAccelCommand extends Command {
 	}
 
 	@Override
-	protected boolean isFinished() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	protected boolean isFinished() { return false; }
+
 	protected void execute() {
 		Robot.rolleraccel.RollerAccel();
 		

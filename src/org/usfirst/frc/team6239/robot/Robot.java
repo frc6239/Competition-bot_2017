@@ -2,8 +2,7 @@
 package org.usfirst.frc.team6239.robot;
 
 
-import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub;
-import org.usfirst.frc.team6239.robot.subsystems.RollerAccelerator;
+import org.usfirst.frc.team6239.robot.subsystems.*;
 
 import com.kauailabs.navx.frc.AHRS;
 
@@ -12,10 +11,7 @@ import edu.wpi.first.wpilibj.I2C.Port;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
 
-import org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem;
-
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import org.usfirst.frc.team6239.robot.subsystems.VisionSub;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -36,7 +32,6 @@ public class Robot extends IterativeRobot {
 	}
 */
 	public static DriveSubsystem DRIVE_SUB;
-	
 	public static OI oi;
 	public static DumpLiftSub dump_lift;
 	public static RobotMap robotmap;
@@ -46,6 +41,7 @@ public class Robot extends IterativeRobot {
     public static AHRS ahrs;
     public static RollerAccelerator rolleraccel;
     public static VisionSub vision;
+    public static RollerGrabberSub rollergrabber;
 
 
 	
@@ -59,6 +55,7 @@ public class Robot extends IterativeRobot {
 		smartDashboard = new SmartDashboard();
 		ahrs = new AHRS(Port.kMXP);
 		vision = new VisionSub();
+		rollergrabber = new RollerGrabberSub();
 				
 	}
 
@@ -96,6 +93,7 @@ public class Robot extends IterativeRobot {
 		Scheduler.getInstance().run();
 		Robot.robotmap.limitswitch1 = Robot.limitswitch1.get();
 		Robot.robotmap.limitswitch2 = Robot.limitswitch2.get();
+		Robot.robotmap.drivingFront = Robot.ahrs.getVelocityX() > 0;
 	}
 	
 	

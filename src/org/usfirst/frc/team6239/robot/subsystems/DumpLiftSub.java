@@ -13,10 +13,10 @@ public class DumpLiftSub extends Subsystem{
 	}
 	
 	public void DumpUp() {
-		Robot.robotmap.DumpTalon.set(1);	
+		Robot.robotmap.DumpTalon.set(1);
+		Robot.robotmap.dumperUp = true;
 		if (Robot.robotmap.limitswitch1) {
 			Robot.robotmap.DumpTalon.set(0);
-			Robot.robotmap.dumperUp = true;
 		}
 		
 	}
