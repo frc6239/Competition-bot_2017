@@ -25,6 +25,7 @@ public class RobotMap {
 	public static int RightTalon1 = 3;
 	public static int RightTalon2 = 4;
 	public static int DumpTalonPort = 0;
+	public static int RollerTal = 6;
 	public double curAngle;
 	public boolean limitswitch1;
 	public boolean limitswitch2;
@@ -38,6 +39,7 @@ public class RobotMap {
 	public Talon LeftController2;
 	public Talon RightController1;
 	public Talon RightController2;
+	public Talon RollerAccelTal;
 	
 	public RobotMap() {
 		
@@ -46,6 +48,7 @@ public class RobotMap {
 		RightController1 = new Talon(RightTalon1);
 		RightController2 = new Talon(RightTalon2);
 		DumpTalon = new Talon(DumpTalonPort);
+		RollerAccelTal = new Talon(RollerTal);
 	}
 	
 }

@@ -17,7 +17,7 @@ public class VisionSub extends Subsystem {
     }
 
 
-	DriveConfig drive_config = (DriveConfig) NetworkTable.getTable("Robot").getValue("SideChooser", DriveConfig.none);
+	DriveConfig drive_config = (DriveConfig) NetworkTable.getTable("Robot").getValue("DriveConfig", DriveConfig.none);
 	Timer time = new Timer();
 	AHRS ahrs = new AHRS(Port.kMXP);
 	

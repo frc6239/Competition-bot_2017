@@ -3,6 +3,7 @@ package org.usfirst.frc.team6239.robot;
 
 
 import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub;
+import org.usfirst.frc.team6239.robot.subsystems.RollerAccelerator;
 
 import com.kauailabs.navx.frc.AHRS;
 
@@ -42,12 +43,14 @@ public class Robot extends IterativeRobot {
 	public static DigitalInput limitswitch2;
     public static SmartDashboard smartDashboard;
     public static AHRS ahrs;
+    public static RollerAccelerator rolleraccel;
 
 
 	
 	public void robotInit() {
 		oi = new OI();
 		dump_lift = new DumpLiftSub();
+		rolleraccel = new RollerAccelerator();
 		robotmap = new RobotMap();
 		limitswitch1 = new DigitalInput(0);
 		limitswitch2 = new DigitalInput(1);

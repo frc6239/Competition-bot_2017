@@ -1,22 +1,21 @@
 package org.usfirst.frc.team6239.robot.subsystems;
 
-import edu.wpi.first.wpilibj.Talon;
+import org.usfirst.frc.team6239.robot.Robot;
 
-public class RollerAccelerator {
-	public Talon LeftController1;
-	public Talon LeftController2;
-	public Talon RightController1;
-	public Talon RightController2;
+import edu.wpi.first.wpilibj.command.Subsystem;
 
-	public static int AcceleratorTalon = 5;
-	public Talon Accelerator;
-	public void DriveRobot(double Leftspeed, double Rightspeed){
-		LeftController1.set(Leftspeed);
-		LeftController2.set(Leftspeed);
-		RightController1.set(Rightspeed);
-		RightController2.set(Rightspeed);
-		Accelerator.set(1);
-}}
+public class RollerAccelerator extends Subsystem{
 
+	@Override
+	protected void initDefaultCommand() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void RollerAccel() {
+		
+		Robot.robotmap.RollerAccelTal.set(1);
+		
+	}
 
 
+}
