@@ -2,22 +2,18 @@
 package org.usfirst.frc.team6239.robot;
 
 
-import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub; 
-import org.usfirst.frc.team6239.robot.subsystems.RollerAccelerator;
-import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
-import org.usfirst.frc.team6239.robot.subsystems.VisionSub;
-
-import com.kauailabs.navx.frc.AHRS;
-
+import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub;
 
 import edu.wpi.first.wpilibj.DigitalInput;
-import edu.wpi.first.wpilibj.I2C.Port;
 import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.Timer;
+import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 
 import org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem;
 
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
+import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -43,64 +39,55 @@ public class Robot extends IterativeRobot {
 	public static RobotMap robotmap;
 	public static DigitalInput limitswitch1;
 	public static DigitalInput limitswitch2;
-    public static SmartDashboard smartDashboard;
-    public static AHRS ahrs;
-    public static RollerAccelerator rolleraccel;
-    public static RollerGrabberSub rollergrabber;
-    public static VisionSub vision;
+	public static RollerGrabberSub roller_grab;
+	public static Timer timer;
+	
 
 
 	
 	public void robotInit() {
 		oi = new OI();
 		dump_lift = new DumpLiftSub();
-		rolleraccel = new RollerAccelerator();
 		robotmap = new RobotMap();
 		limitswitch1 = new DigitalInput(0);
 		limitswitch2 = new DigitalInput(1);
-		smartDashboard = new SmartDashboard();
-		ahrs = new AHRS(Port.kMXP);
-		rollergrabber = new RollerGrabberSub();
-		vision = new VisionSub();
+		roller_grab = new RollerGrabberSub();
+		timer = new Timer();
 				
 	}
-
 
 	public void disabledInit() {
 		
 	}
 
-
 	public void autonomousInit() {
 		
 	}
-
 
 	public void teleopInit() {
 		
 	}
 
-
 	public void robotPeriodic() {
 		
 	}
+	
 	public void disabledPeriodic() {
 		Scheduler.getInstance().run();
+		
 	}
-
 
 	public void autonomousPeriodic() {
 		Scheduler.getInstance().run();
-		Robot.robotmap.curAngle = ahrs.getAngle();
+		
 	}
-
 
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
-		Robot.robotmap.limitswitch1 = Robot.limitswitch1.get();
+		Robot.robotmap.limitswitch1 = Robot.limitswitch1.get
+				
+				();
 		Robot.robotmap.limitswitch2 = Robot.limitswitch2.get();
-		Robot.robotmap.driving = Robot.ahrs.isMoving();
 	}
-	
-	
+		
 }

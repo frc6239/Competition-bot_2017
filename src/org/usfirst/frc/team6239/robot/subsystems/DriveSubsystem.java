@@ -14,7 +14,7 @@ public class DriveSubsystem extends Subsystem {
 	}
 
 
-	public void initDefaultCommand() {
+	protected void initDefaultCommand() {
 		// Set the default command for a subsystem here.
 		setDefaultCommand(new DriveCommand());
 
@@ -24,8 +24,8 @@ public class DriveSubsystem extends Subsystem {
 	public void tank(double Leftspeed, double Rightspeed) {
 
 
-		Robot.robotmap.LeftController1.set(Leftspeed);
-		Robot.robotmap.LeftController2.set(Leftspeed);
+		Robot.robotmap.LeftController1.set(-Leftspeed);
+		Robot.robotmap.LeftController2.set(-Leftspeed);
 		Robot.robotmap.RightController1.set(Rightspeed);
 		Robot.robotmap.RightController2.set(Rightspeed);
 

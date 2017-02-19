@@ -1,6 +1,6 @@
 package org.usfirst.frc.team6239.robot;
 
-import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.Joystick; 
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
@@ -8,6 +8,8 @@ import org.usfirst.frc.team6239.robot.commands.DumpDownCommand;
 import org.usfirst.frc.team6239.robot.commands.DumpUpCommand;
 
 import edu.wpi.first.wpilibj.buttons.Button;
+import org.usfirst.frc.team6239.robot.commands.RollerGrabberCommand;
+import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -18,8 +20,10 @@ public class OI {
 	public Joystick gamepad;
 	public Button LeftJoystick;
 	public Button RightJoystick;
-	public Object stickcontrolerL;
-	public Object stickcontrolerR;
+	public Joystick stickcontrolerL;
+	public Joystick stickcontrolerR;
+	public Button RollerGrab;
+	
 
 	
     //// CREATING BUTTONS
@@ -50,14 +54,27 @@ public class OI {
     // button.whenReleased(new ExampleCommand());
 
 	Button DumpUp;
-	Button DumpDown;
+	Button DumpDown;	
+	
+	
 	public OI() {
-		DumpUp.whenPressed(new DumpUpCommand());
-		DumpDown.whenPressed(new DumpDownCommand());
+
+//		try{
+//		DumpUp.whenPressed(new DumpUpCommand());
+//		DumpDown.whenPressed(new DumpDownCommand());
+//		}catch(Exception e){
+//			System.out.println(e);
+//		}
 		gamepad = new Joystick(0);
 		LeftJoystick = new JoystickButton(gamepad, 0);
 		RightJoystick = new JoystickButton(gamepad, 1); 
-	
+		stickcontrolerL = new Joystick(1);
+		stickcontrolerR = new Joystick(2);
+		RollerGrab = new JoystickButton(stickcontrolerR, 1);
+        RollerGrab.whileHeld(new RollerGrabberCommand());
+		
+		
+		
 }
 
 }

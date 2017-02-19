@@ -9,7 +9,7 @@ import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
  */
 public class RollerGrabberCommand extends Command {
     public RollerGrabberCommand() {
-        requires(Robot.rollergrabber);
+        requires(Robot.roller_grab);
     }
 
     @Override
@@ -17,6 +17,6 @@ public class RollerGrabberCommand extends Command {
         return false;
     }
     public void execute() {
-        Robot.rollergrabber.RollerFront();
+        Robot.roller_grab.RollerFront();
     }
 }

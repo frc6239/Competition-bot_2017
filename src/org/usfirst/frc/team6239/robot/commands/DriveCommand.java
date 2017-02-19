@@ -17,13 +17,7 @@ public class DriveCommand extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	double LeftGamepadJoystickspeed =  Robot.oi.gamepad.getRawAxis(1);
-    	double RightGamepadJoystickspeed =  Robot.oi.gamepad.getRawAxis(5);
-    	Robot.DRIVE_SUB.tank(LeftGamepadJoystickspeed, RightGamepadJoystickspeed);
-    	  
-	    double LeftJoystickspeed = Robot.oi.gamepad.getRawAxis(1);
-        double RightJoystickspeed = Robot.oi.gamepad.getRawAxis(1);
-        Robot.DRIVE_SUB.arcade(LeftJoystickspeed,RightJoystickspeed);
+    	
     
     
     
@@ -31,6 +25,16 @@ public class DriveCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	double LeftGamepadJoystickspeed =  Robot.oi.gamepad.getRawAxis(0);
+    	double RightGamepadJoystickspeed =  Robot.oi.gamepad.getRawAxis(3);
+    	//Robot.DRIVE_SUB.tank(LeftGamepadJoystickspeed, RightGamepadJoystickspeed);
+    	  
+    	double LeftJoystickspeed = Robot.oi.stickcontrolerL.getY();
+    	double RightJoystickspeed = Robot.oi.stickcontrolerR.getY();
+    	System.out.println(LeftJoystickspeed);
+        Robot.DRIVE_SUB.tank(LeftJoystickspeed,RightJoystickspeed);
+        
+        //Robot.DRIVE_SUB.arcade(LeftJoystickspeed,RightJoystickspeed);
     }
 
     // Make this return true when this Command no longer needs to run execute()
