@@ -16,14 +16,6 @@ import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-
-	public Joystick gamepad;
-	public Button LeftJoystick;
-	public Button RightJoystick;
-	public Joystick stickcontrolerL;
-	public Joystick stickcontrolerR;
-	public Button RollerGrab;
-	public Button CancelRoller;
 	
 
 	
@@ -55,8 +47,14 @@ public class OI {
     // button.whenReleased(new ExampleCommand());
 
 	Button DumpUp;
-	Button DumpDown;	
-	
+	Button DumpDown;
+	public Joystick gamepad;
+	public Button LeftJoystick;
+	public Button RightJoystick;
+	public Joystick stickcontrolerL;
+	public Joystick stickcontrolerR;
+	public Button RollerGrab;
+	public Button CancelRoller;
 	
 	public OI() {
 
