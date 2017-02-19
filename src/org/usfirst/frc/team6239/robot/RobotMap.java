@@ -32,6 +32,8 @@ public class RobotMap {
 	public double curAngle;
 	public boolean limitswitch1;
 	public boolean limitswitch2;
+	public boolean limitswitch3;
+	public boolean limitswitch4;
 	public boolean dumperUp;
 	public boolean isSeen;
 	public boolean driving;
