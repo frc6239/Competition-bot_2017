@@ -31,7 +31,7 @@ public class DriveCommand extends Command {
     	  
     	double LeftJoystickspeed = Robot.oi.stickcontrolerL.getY();
     	double RightJoystickspeed = Robot.oi.stickcontrolerR.getY();
-    	System.out.println(LeftJoystickspeed);
+    	//System.out.println(LeftJoystickspeed);
         Robot.DRIVE_SUB.tank(LeftJoystickspeed,RightJoystickspeed);
         
         //Robot.DRIVE_SUB.arcade(LeftJoystickspeed,RightJoystickspeed);

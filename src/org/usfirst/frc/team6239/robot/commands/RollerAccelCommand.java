@@ -12,7 +12,7 @@ public class RollerAccelCommand extends Command{
 		return false;
 	}
 	protected void execute() {
-		Robot.rolleraccel.RollerAccel();
+		//Robot.rolleraccel.RollerAccel();
 		
 	}
 

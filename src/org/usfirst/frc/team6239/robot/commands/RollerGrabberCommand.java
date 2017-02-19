@@ -11,7 +11,9 @@ public class RollerGrabberCommand extends Command {
     public RollerGrabberCommand() {
         requires(Robot.roller_grab);
     }
-
+    protected void end() {
+    	Robot.roller_grab.Stop();
+    }
     @Override
     protected boolean isFinished() {
         return false;

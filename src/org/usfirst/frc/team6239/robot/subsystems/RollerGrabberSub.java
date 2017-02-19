@@ -14,17 +14,21 @@ public class RollerGrabberSub extends Subsystem {
         //setDefaultCommand(new RollerGrabberCommand);
     }
     public void RollerFront() {
+    	System.out.println(Robot.robotmap.dumperUp +" "+  !Robot.robotmap.driving);
 
-        if (Robot.robotmap.dumperUp || !Robot.robotmap.driving) {
+        if (Robot.robotmap.dumperUp ){//!Robot.robotmap.driving) {
             RollerBack();
         }else {
-            Robot.robotmap.RollerGrabTal.set(1);
+            Robot.robotmap.RollerGrabTal.set(-1);
 
         }
 
 
     }
     public void RollerBack() {
-        Robot.robotmap.RollerGrabTal.set(-1);
+        Robot.robotmap.RollerGrabTal.set(1);
+    }
+    public void Stop() {
+        Robot.robotmap.RollerGrabTal.set(0);
     }
 }

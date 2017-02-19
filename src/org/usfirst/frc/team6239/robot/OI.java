@@ -23,6 +23,7 @@ public class OI {
 	public Joystick stickcontrolerL;
 	public Joystick stickcontrolerR;
 	public Button RollerGrab;
+	public Button CancelRoller;
 	
 
 	
@@ -72,7 +73,7 @@ public class OI {
 		stickcontrolerR = new Joystick(2);
 		RollerGrab = new JoystickButton(stickcontrolerR, 1);
         RollerGrab.whileHeld(new RollerGrabberCommand());
-		
+    
 		
 		
 }

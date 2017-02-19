@@ -14,6 +14,7 @@ import org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem;
 
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
+import org.usfirst.frc.team6239.robot.subsystems.VisionSub;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -33,7 +34,7 @@ public class Robot extends IterativeRobot {
 
 	}
 */
-	public static DriveSubsystem DRIVE_SUB;
+	public static DriveSubsystem DRIVE_SUB = new DriveSubsystem();
 	public static OI oi;
 	public static DumpLiftSub dump_lift;
 	public static RobotMap robotmap;
@@ -41,19 +42,19 @@ public class Robot extends IterativeRobot {
 	public static DigitalInput limitswitch2;
 	public static RollerGrabberSub roller_grab;
 	public static Timer timer;
-	
+	public static VisionSub vision;// = new VisionSub();
 
 
 	
 	public void robotInit() {
-		oi = new OI();
+		
 		dump_lift = new DumpLiftSub();
 		robotmap = new RobotMap();
 		limitswitch1 = new DigitalInput(0);
 		limitswitch2 = new DigitalInput(1);
 		roller_grab = new RollerGrabberSub();
 		timer = new Timer();
-				
+		oi = new OI();	
 	}
 
 	public void disabledInit() {
@@ -84,9 +85,7 @@ public class Robot extends IterativeRobot {
 
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
-		Robot.robotmap.limitswitch1 = Robot.limitswitch1.get
-				
-				();
+		Robot.robotmap.limitswitch1 = Robot.limitswitch1.get();
 		Robot.robotmap.limitswitch2 = Robot.limitswitch2.get();
 	}
 		
