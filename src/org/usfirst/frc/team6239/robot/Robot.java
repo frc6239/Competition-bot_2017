@@ -2,17 +2,17 @@
 package org.usfirst.frc.team6239.robot;
 
 
+import edu.wpi.first.wpilibj.I2C;
 import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub;
 
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import com.kauailabs.navx.frc.AHRS;
 
 import org.usfirst.frc.team6239.robot.subsystems.DriveSubsystem;
 
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
 import org.usfirst.frc.team6239.robot.subsystems.VisionSub;
 
@@ -43,6 +43,9 @@ public class Robot extends IterativeRobot {
 	public static RollerGrabberSub roller_grab;
 	public static Timer timer;
 	public static VisionSub vision;// = new VisionSub();
+	public static AHRS ahrs;
+	
+
 
 
 	
@@ -55,6 +58,8 @@ public class Robot extends IterativeRobot {
 		roller_grab = new RollerGrabberSub();
 		timer = new Timer();
 		oi = new OI();	
+		ahrs = new AHRS(I2C.Port.kMXP);
+				
 	}
 
 	public void disabledInit() {
@@ -87,6 +92,7 @@ public class Robot extends IterativeRobot {
 		Scheduler.getInstance().run();
 		Robot.robotmap.limitswitch1 = Robot.limitswitch1.get();
 		Robot.robotmap.limitswitch2 = Robot.limitswitch2.get();
+		Robot.robotmap.driving = Robot.ahrs.isMoving();
 	}
 		
 }

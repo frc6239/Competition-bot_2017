@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="EclipseModuleManager">
-    <libelement value="jar://$USER_HOME$/wpilib/user/java/lib/CTRLib.jar!/" />
-    <libelement value="jar://$USER_HOME$/wpilib/user/java/lib/navx_frc.jar!/" />
+    <libelement value="file:///home/epalmer/wpilib/user/java/lib/CTRLib.jar" />
+    <libelement value="file:///home/epalmer/wpilib/user/java/lib/navx_frc.jar" />
     <varelement var="file://$wpilib$" value="wpilib" />
-    <varelement var="file://$wpilib.sources$" value="src:wpilib.sources" />
-    <varelement var="file://$networktables$" value="networktables" />
-    <varelement var="file://$networktables.sources$" value="src:networktables.sources" />
-    <varelement var="file://$opencv$" value="opencv" />
-    <varelement var="file://$opencv.sources$" value="src:opencv.sources" />
-    <varelement var="file://$cscore$" value="cscore" />
-    <varelement var="file://$cscore.sources$" value="src:cscore.sources" />
-    <varelement var="file://$USERLIBS_DIR$/navx_frc.jar" value="USERLIBS_DIR/navx_frc.jar" />
     <varelement var="file://$wpilib.sources$" kind="src:" value="wpilib.sources" />
+    <varelement var="file://$networktables$" value="networktables" />
     <varelement var="file://$networktables.sources$" kind="src:" value="networktables.sources" />
+    <varelement var="file://$opencv$" value="opencv" />
     <varelement var="file://$opencv.sources$" kind="src:" value="opencv.sources" />
+    <varelement var="file://$cscore$" value="cscore" />
     <varelement var="file://$cscore.sources$" kind="src:" value="cscore.sources" />
+    <varelement var="file://$USERLIBS_DIR$/navx_frc.jar" value="USERLIBS_DIR/navx_frc.jar" />
     <src_description expected_position="0">
       <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
     </src_description>
@@ -84,16 +80,16 @@
     <orderEntry type="module-library">
       <library name="CTRLib.jar">
         <CLASSES>
-          <root url="jar://$USER_HOME$/wpilib/user/java/lib/CTRLib.jar!/" />
+          <root url="file:///home/epalmer/wpilib/user/java/lib/CTRLib.jar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="$USER_HOME$/wpilib/user/java/lib/navx_frc.jar">
+      <library name="/home/epalmer/wpilib/user/java/lib/navx_frc.jar">
         <CLASSES>
-          <root url="jar://$USER_HOME$/wpilib/user/java/lib/navx_frc.jar!/" />
+          <root url="file:///home/epalmer/wpilib/user/java/lib/navx_frc.jar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

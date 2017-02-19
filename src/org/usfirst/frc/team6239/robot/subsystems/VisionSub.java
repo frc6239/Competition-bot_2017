@@ -30,7 +30,7 @@ public class VisionSub extends Subsystem {
 			
 			if (drive_config.equals(DriveConfig.left)) {
 				
-				while (30 > Robot.robotmap.curAngle + 10 && Robot.robotmap.isSeen) {
+				while (20 > Robot.robotmap.curAngle && Robot.robotmap.isSeen) {
 					Robot.DRIVE_SUB.TurnLeft(1, 1);
 					
 					if (Robot.robotmap.curAngle > 20 && Robot.robotmap.curAngle < 20.5) {
@@ -49,7 +49,7 @@ public class VisionSub extends Subsystem {
 				
 			} else if (drive_config.equals(DriveConfig.right)) {
 				
-				while (-30 > Robot.robotmap.curAngle + 10 && Robot.robotmap.isSeen) {
+				while (-20 > Robot.robotmap.curAngle && Robot.robotmap.isSeen) {
 					Robot.DRIVE_SUB.TurnRight(1, 1);
 					
 					if (Robot.robotmap.curAngle > 20 && Robot.robotmap.curAngle < 20.5) {
