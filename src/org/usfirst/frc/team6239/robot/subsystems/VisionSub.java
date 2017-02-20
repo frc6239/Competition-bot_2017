@@ -17,15 +17,24 @@ public class VisionSub extends Subsystem {
     }
 
 
-	DriveConfig drive_config = (DriveConfig) NetworkTable.getTable("Robot").getValue("DriveConfig", DriveConfig.none);
+	DriveConfig drive_config;
+	double side = NetworkTable.getTable("Robot").getDouble("Side");
 	Timer time = new Timer();
 	AHRS ahrs = new AHRS(Port.kMXP);
+
 	
 	protected void initDefaultCommand() {
 		
 		
 	}
 	public void VisionCommand() {
+		if (side == 1.0) {
+			drive_config = DriveConfig.left;
+		} else if (side == 2) {
+			drive_config = DriveConfig.right;
+		} else if (side == 3) {
+			drive_config = DriveConfig.none;
+		}
 		if (Robot.robotmap.isSeen) {
 			
 			if (drive_config.equals(DriveConfig.left)) {
