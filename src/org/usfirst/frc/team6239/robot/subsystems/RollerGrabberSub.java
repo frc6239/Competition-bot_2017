@@ -16,16 +16,12 @@ public class RollerGrabberSub extends Subsystem {
     public void RollerFront() {
         System.out.println(Robot.robotmap.dumperUp + " " + !Robot.robotmap.driving);
 
-        if (Robot.robotmap.dumperUp) {//!Robot.robotmap.driving) {
-            RollerBack();
-        } else {
-            Robot.robotmap.RollerGrabTal.set(-1);
 
             if (Robot.robotmap.dumperUp) {
                 RollerBack();
             } else {
                 if (Robot.robotmap.driving) {
-                    Robot.robotmap.RollerGrabTal.set(1);
+                    Robot.robotmap.RollerGrabTal.set(-1);
 
                 } else {
                     Robot.robotmap.RollerGrabTal.set(0);
@@ -36,12 +32,11 @@ public class RollerGrabberSub extends Subsystem {
 
 
         }
-    }
+    
     public void RollerBack() {
         Robot.robotmap.RollerGrabTal.set(1);
     }
     public void Stop() {
         Robot.robotmap.RollerGrabTal.set(0);
     }
-
 }

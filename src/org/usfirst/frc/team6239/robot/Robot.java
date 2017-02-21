@@ -2,6 +2,8 @@
 package org.usfirst.frc.team6239.robot;
 
 
+import com.kauailabs.navx.frc.AHRS;
+import edu.wpi.first.wpilibj.I2C;
 import org.usfirst.frc.team6239.robot.subsystems.DumpLiftSub;
 
 import edu.wpi.first.wpilibj.DigitalInput;
@@ -40,18 +42,23 @@ public class Robot extends IterativeRobot {
 	public static RobotMap robotmap;
 	public static DigitalInput limitswitch1;
 	public static DigitalInput limitswitch2;
+	public static DigitalInput limitswitch3;
+	public static DigitalInput limitswitch4;
 	public static RollerGrabberSub roller_grab;
 	public static Timer timer;
 	public static VisionSub vision;// = new VisionSub();
-
+    public static AHRS ahrs;
 
 	
 	public void robotInit() {
 		
 		dump_lift = new DumpLiftSub();
 		robotmap = new RobotMap();
-		limitswitch1 = new DigitalInput(0);
-		limitswitch2 = new DigitalInput(1);
+		limitswitch1 = new DigitalInput(3);
+		limitswitch2 = new DigitalInput(2);
+		limitswitch3 = new DigitalInput(0);
+		limitswitch4 = new DigitalInput(1);
+		ahrs = new AHRS(I2C.Port.kMXP);
 		roller_grab = new RollerGrabberSub();
 		timer = new Timer();
 		oi = new OI();	
@@ -85,8 +92,14 @@ public class Robot extends IterativeRobot {
 
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
+
 		Robot.robotmap.limitswitch1 = Robot.limitswitch1.get();
 		Robot.robotmap.limitswitch2 = Robot.limitswitch2.get();
-	}
+		Robot.robotmap.limitswitch3 = Robot.limitswitch3.get();
+		Robot.robotmap.limitswitch4 = Robot.limitswitch4.get();
+		Robot.robotmap.driving = oi.isMoving();
+		
+
+	} 
 		
 }

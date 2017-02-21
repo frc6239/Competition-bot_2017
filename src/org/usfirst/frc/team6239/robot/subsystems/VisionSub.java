@@ -9,12 +9,11 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.networktables.NetworkTable;
 
 public class VisionSub extends Subsystem {
-	
 	public enum DriveConfig {
-    	left,
-    	right,
-    	none
-    }
+		left,
+		right,
+		none
+	}
 
 
 	DriveConfig drive_config;
@@ -22,10 +21,10 @@ public class VisionSub extends Subsystem {
 	Timer time = new Timer();
 	AHRS ahrs = new AHRS(Port.kMXP);
 
-	
+
 	protected void initDefaultCommand() {
-		
-		
+
+
 	}
 	public void VisionCommand() {
 		if (side == 1.0) {
@@ -36,12 +35,12 @@ public class VisionSub extends Subsystem {
 			drive_config = DriveConfig.none;
 		}
 		if (Robot.robotmap.isSeen) {
-			
+
 			if (drive_config.equals(DriveConfig.left)) {
-				
+
 				while (20 > Robot.robotmap.curAngle && Robot.robotmap.isSeen) {
 					Robot.DRIVE_SUB.TurnLeft(1, 1);
-					
+
 					if (Robot.robotmap.curAngle > 20 && Robot.robotmap.curAngle < 20.5) {
 						Robot.DRIVE_SUB.tank(1, 1);
 						try {
@@ -51,16 +50,16 @@ public class VisionSub extends Subsystem {
 							e.printStackTrace();
 						}
 					}
-					
-					
+
+
 				}
 
-				
+
 			} else if (drive_config.equals(DriveConfig.right)) {
-				
+
 				while (-20 > Robot.robotmap.curAngle && Robot.robotmap.isSeen) {
 					Robot.DRIVE_SUB.TurnRight(1, 1);
-					
+
 					if (Robot.robotmap.curAngle > 20 && Robot.robotmap.curAngle < 20.5) {
 						Robot.DRIVE_SUB.tank(1, 1);
 						try {
@@ -70,16 +69,16 @@ public class VisionSub extends Subsystem {
 							e.printStackTrace();
 						}
 					}
-					
-					
+
+
 				}
 
-				
+
 			} else {
 				Robot.DRIVE_SUB.tank(0, 0);
 			}
 		}
-	} 
+	}
 }
 	
 

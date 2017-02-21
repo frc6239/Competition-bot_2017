@@ -16,9 +16,27 @@ import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-	
 
-	
+	public boolean isMoving() {
+//		if (Robot.oi.stickcontrolerL.getY() < -.05 && Robot.oi.stickcontrolerR.getY() < -.05) {
+//			return true;
+//		} else {
+//			return false;
+//		}
+		
+		
+		
+		if (Robot.oi.stickcontrolerL.getY()>0.5 && Robot.oi.stickcontrolerR.getY() >0.5){
+			return false;
+			
+		}else{
+			return true;
+		}
+
+	}
+
+
+
     //// CREATING BUTTONS
     // One type of button is a joystick button which is any button on a joystick.
     // You create one by telling it which joystick it's on and which button
@@ -46,8 +64,8 @@ public class OI {
     // until it is finished as determined by it's isFinished method.
     // button.whenReleased(new ExampleCommand());
 
-	Button DumpUp;
-	Button DumpDown;
+	//Button DumpUp;
+	// nButton DumpDown;
 	public Joystick gamepad;
 	public Button LeftJoystick;
 	public Button RightJoystick;
@@ -55,15 +73,12 @@ public class OI {
 	public Joystick stickcontrolerR;
 	public Button RollerGrab;
 	public Button CancelRoller;
+	public Button DumpUp;
+	public Button DumpDown;
+	
 	
 	public OI() {
-
-//		try{
-//		DumpUp.whenPressed(new DumpUpCommand());
-//		DumpDown.whenPressed(new DumpDownCommand());
-//		}catch(Exception e){
-//			System.out.println(e);
-//		}
+	
 		gamepad = new Joystick(0);
 		LeftJoystick = new JoystickButton(gamepad, 0);
 		RightJoystick = new JoystickButton(gamepad, 1); 
@@ -71,7 +86,14 @@ public class OI {
 		stickcontrolerR = new Joystick(2);
 		RollerGrab = new JoystickButton(stickcontrolerR, 1);
         RollerGrab.whileHeld(new RollerGrabberCommand());
-    
+    	DumpUp = new JoystickButton(stickcontrolerL,2);
+		DumpDown = new JoystickButton(stickcontrolerR,2);
+		try{
+		DumpUp.whenPressed(new DumpUpCommand());
+		DumpDown.whenPressed(new DumpDownCommand());
+		}catch(Exception e){
+			System.out.println(e);
+		}
 		
 		
 }
