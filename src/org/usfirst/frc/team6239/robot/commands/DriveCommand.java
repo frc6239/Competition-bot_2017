@@ -33,7 +33,7 @@ public class DriveCommand extends Command {
     	double RightJoystickspeed = Robot.oi.stickcontrolerR.getY();
     	//System.out.println(LeftJoystickspeed);
         Robot.DRIVE_SUB.tank(LeftJoystickspeed,RightJoystickspeed);
-        
+        //Robot.DRIVE_SUB.tank(RightJoystickspeed,LeftJoystickspeed);
         //Robot.DRIVE_SUB.arcade(LeftJoystickspeed,RightJoystickspeed);
     }
 
@@ -44,6 +44,7 @@ public class DriveCommand extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	Robot.DRIVE_SUB.tank(0, 0);
     }
 
     // Called when another command which requires one or more of the same

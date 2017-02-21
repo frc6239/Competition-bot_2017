@@ -8,16 +8,39 @@ public class DumpUpCommand extends Command{
 	
 	public DumpUpCommand() {
 		requires(Robot.dump_lift);
+	    //setTimeout(3.0); // NEED EXPERIMENTALLY CHOSEN VALUE !!!
 	}
-	
-	protected void execute() {
+
+	@Override
+	protected void initialize () {
+		// start the Dumper going up
 		Robot.dump_lift.DumpUp();
+	}
+
+	@Override
+	protected void execute() {
+		// nothing to execute (all done in isFinished)
 	}
 	
 	@Override
 	protected boolean isFinished() {
+		// check if the Dumper is up yet or if timeout has expired
+		boolean bIsTimedOut = false;//isTimedOut();
+		boolean bIsDumpUp = Robot.dump_lift.isDumpUp();
 		
-		return false;
+		if (bIsTimedOut && !bIsDumpUp)
+		{
+			end();
+		}
+		
+		return (bIsTimedOut || bIsDumpUp);
 	}
 
+    protected void end() {
+    	Robot.dump_lift.DumpStop();
+    }
+
+    protected void interrupted() {
+    	end();
+    }
 }
