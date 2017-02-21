@@ -49,7 +49,7 @@ public class DumpLiftSub extends Subsystem {
 		    * 02 front and rear motors stop on limit switch
 		    * 03 set dumperUp boolean (so that roller grabber reversed)
 		*/		
-		Robot.robotmap.dumperUp = true;
+
 		
 		if (!Robot.robotmap.limitswitch1) {
 			Robot.robotmap.DumpTalon.set(.6);	
@@ -64,6 +64,7 @@ public class DumpLiftSub extends Subsystem {
 	
 	
 	public boolean isDumpUp () {
+		Robot.robotmap.dumperUp = true;
 		
 		if (Robot.robotmap.limitswitch1) {
 			Robot.robotmap.DumpTalon.set(0);	

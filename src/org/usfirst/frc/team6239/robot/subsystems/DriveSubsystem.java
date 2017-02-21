@@ -24,10 +24,10 @@ public class DriveSubsystem extends Subsystem {
 	public void tank(double Leftspeed, double Rightspeed) {
 
 
-		Robot.robotmap.LeftController1.set(-Leftspeed*.6);
-		Robot.robotmap.LeftController2.set(-Leftspeed*.6);
-		Robot.robotmap.RightController1.set(Rightspeed*.6);
-		Robot.robotmap.RightController2.set(Rightspeed*.6);
+		Robot.robotmap.LeftController1.set(-Leftspeed);
+		Robot.robotmap.LeftController2.set(-Leftspeed);
+		Robot.robotmap.RightController1.set(Rightspeed);
+		Robot.robotmap.RightController2.set(Rightspeed);
 
 
 	}
