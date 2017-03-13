@@ -2,6 +2,7 @@ package org.usfirst.frc.team6239.robot.commands;
 
 import org.usfirst.frc.team6239.robot.Robot;
 
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 
 public class DumpUpCommand extends Command{
@@ -15,6 +16,7 @@ public class DumpUpCommand extends Command{
 	protected void initialize () {
 		// start the Dumper going up
 		Robot.dump_lift.DumpUp();
+		
 	}
 
 	@Override
@@ -37,7 +39,10 @@ public class DumpUpCommand extends Command{
 	}
 
     protected void end() {
+    	Robot.robotmap.dumperUp = false;
+    	
     	Robot.dump_lift.DumpStop();
+    	
     }
 
     protected void interrupted() {

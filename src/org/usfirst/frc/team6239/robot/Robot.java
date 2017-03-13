@@ -45,10 +45,10 @@ public class Robot extends IterativeRobot {
 	public static DigitalInput limitswitch3;
 	public static DigitalInput limitswitch4;
 	public static RollerGrabberSub roller_grab;
-	public static Timer timer;
+	
 	public static VisionSub vision;// = new VisionSub();
     public static AHRS ahrs;
-
+    public static Timer timer = new Timer();
 	
 	public void robotInit() {
 		
@@ -60,7 +60,7 @@ public class Robot extends IterativeRobot {
 		limitswitch4 = new DigitalInput(1);
 		ahrs = new AHRS(I2C.Port.kMXP);
 		roller_grab = new RollerGrabberSub();
-		timer = new Timer();
+		
 		oi = new OI();	
 	}
 

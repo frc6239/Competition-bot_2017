@@ -2,6 +2,7 @@ package org.usfirst.frc.team6239.robot.commands;
 
 import org.usfirst.frc.team6239.robot.Robot;
 
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 
 public class DumpDownCommand extends Command
@@ -11,11 +12,14 @@ public class DumpDownCommand extends Command
 		requires(Robot.dump_lift);
 	   // setTimeout(3.0); // NEED EXPERIMENTALLY CHOSEN VALUE !!!
 	}
-
+	
 	@Override
 	protected void initialize () {
 		// start the Dumper going down
+		Robot.robotmap.dumperUp = true;
+		Robot.roller_grab.delayForASecond();
 		Robot.dump_lift.DumpDown();
+		
 	}
 
 	@Override
@@ -39,6 +43,7 @@ public class DumpDownCommand extends Command
 
     protected void end() {
     	Robot.dump_lift.DumpStop();
+    	
     }
 
     protected void interrupted() {

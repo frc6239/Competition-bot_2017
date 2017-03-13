@@ -2,6 +2,7 @@ package org.usfirst.frc.team6239.robot.subsystems;
 
 import org.usfirst.frc.team6239.robot.Robot;
 
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class DumpLiftSub extends Subsystem {
@@ -42,14 +43,14 @@ public class DumpLiftSub extends Subsystem {
   ### END OF STUB CODE ### 
 */
 
-	public void DumpUp () {
+	public void DumpUp () {/// runs in init
 	
 		/*
 		    * 01 Set motors to run forward (front and rear)
 		    * 02 front and rear motors stop on limit switch
 		    * 03 set dumperUp boolean (so that roller grabber reversed)
 		*/		
-
+		
 		
 		if (!Robot.robotmap.limitswitch1) {
 			Robot.robotmap.DumpTalon.set(.6);	
@@ -58,13 +59,13 @@ public class DumpLiftSub extends Subsystem {
 		if (!Robot.robotmap.limitswitch2) {
 			Robot.robotmap.RearDumpTalon.set(1);	
 		}
-		
+
 		
 	}
 	
 	
 	public boolean isDumpUp () {
-		Robot.robotmap.dumperUp = true;
+		
 		
 		if (Robot.robotmap.limitswitch1) {
 			Robot.robotmap.DumpTalon.set(0);	
@@ -77,6 +78,7 @@ public class DumpLiftSub extends Subsystem {
 		return (Robot.robotmap.limitswitch1 && Robot.robotmap.limitswitch2);		
 	}
 	
+
 	public void DumpDown () {
 		
 		/*
@@ -92,6 +94,7 @@ public class DumpLiftSub extends Subsystem {
 		if (!Robot.robotmap.limitswitch4) {
 			Robot.robotmap.RearDumpTalon.set(-1);	
 		}		
+		
 	}
 	
 	
@@ -109,7 +112,7 @@ public class DumpLiftSub extends Subsystem {
 		
 		if (bIsDown)
 		{	
-			Robot.robotmap.dumperUp = false;
+			
 		}
 		
 		return bIsDown;		
