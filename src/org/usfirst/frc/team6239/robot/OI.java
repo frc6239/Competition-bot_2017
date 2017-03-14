@@ -17,55 +17,7 @@ import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
  */
 public class OI {
 
-	public boolean isMoving() {
-//		if (Robot.oi.stickcontrolerL.getY() < -.05 && Robot.oi.stickcontrolerR.getY() < -.05) {
-//			return true;
-//		} else {
-//			return false;
-//		}
-		
-		
-		
-		if (Robot.oi.stickcontrolerL.getY()>0.5 && Robot.oi.stickcontrolerR.getY() >0.5){
-			return false;
-			
-		}else{
-			return true;
-		}
 
-	}
-
-
-
-    //// CREATING BUTTONS
-    // One type of button is a joystick button which is any button on a joystick.
-    // You create one by telling it which joystick it's on and which button
-    // number it is.
-    // Joystick stick = new Joystick(port);
-    // Button button = new JoystickButton(stick, buttonNumber);
-    
-    // There are a few additional built in buttons you can use. Additionally,
-    // by subclassing Button you can create custom triggers and bind those to
-    // commands the same as any other Button.
-    
-    //// TRIGGERING COMMANDS WITH BUTTONS
-    // Once you have a button, it's trivial to bind it to a 
-    // three ways:
-    
-    // Start the command when the button is pressed and let it run the command
-    // until it is finished as determined by it's isFinished method.
-    // button.whenPressed(new ExampleCommand());
-    
-    // Run the command while the button is being held down and interrupt it once
-    // the button is released.
-    // button.whileHeld(new ExampleCommand());
-    
-    // Start the command when the button is released  and let it run the command
-    // until it is finished as determined by it's isFinished method.
-    // button.whenReleased(new ExampleCommand());
-
-	//Button DumpUp;
-	// nButton DumpDown;
 	public Joystick gamepad;
 	public Button LeftJoystick;
 	public Button RightJoystick;
@@ -88,14 +40,19 @@ public class OI {
         RollerGrab.whileHeld(new RollerGrabberCommand());
     	DumpUp = new JoystickButton(stickcontrolerL,2);
 		DumpDown = new JoystickButton(stickcontrolerR,2);
-		try{
-		DumpUp.whenPressed(new DumpUpCommand());
-		DumpDown.whenPressed(new DumpDownCommand());
-		}catch(Exception e){
+		try {
+			DumpUp.whenPressed(new DumpUpCommand());
+			DumpDown.whenPressed(new DumpDownCommand());
+		} catch(Exception e) {
 			System.out.println(e);
 		}
 		
 		
 }
+	public boolean isMoving() {
+
+		return (stickcontrolerL.getY() < -.05 && stickcontrolerR.getY() < -.05);
+
+	}
 
 }

@@ -2,7 +2,6 @@ package org.usfirst.frc.team6239.robot.commands;
 
 import org.usfirst.frc.team6239.robot.Robot;
 
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 
 public class DumpDownCommand extends Command
@@ -10,7 +9,7 @@ public class DumpDownCommand extends Command
 	
 	public DumpDownCommand() {
 		requires(Robot.dump_lift);
-	   // setTimeout(3.0); // NEED EXPERIMENTALLY CHOSEN VALUE !!!
+	    //setTimeout(3.0); // NEED EXPERIMENTALLY CHOSEN VALUE !!!
 	}
 	
 	@Override
@@ -24,7 +23,7 @@ public class DumpDownCommand extends Command
 
 	@Override
 	protected void execute() {
-		// nothing to execute (all done in isFinished)
+
 	}
 	
 	@Override

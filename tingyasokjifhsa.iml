@@ -12,6 +12,7 @@
     <varelement var="file://$cscore$" value="cscore" />
     <varelement var="file://$cscore.sources$" kind="src:" value="cscore.sources" />
     <varelement var="file://$USERLIBS_DIR$/navx_frc.jar" value="USERLIBS_DIR/navx_frc.jar" />
+    <varelement var="file://$USERLIBS_DIR$/CTRLib.jar" value="USERLIBS_DIR/CTRLib.jar" />
     <src_description expected_position="0">
       <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
     </src_description>
@@ -95,7 +96,16 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="cscore-sources" level="project" />
+    <orderEntry type="module-library">
+      <library name="USERLIBS_DIR/CTRLib.jar">
+        <CLASSES>
+          <root url="file://$USERLIBS_DIR$/CTRLib.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="WPILib" level="project" />
     <orderEntry type="library" name="CTRLib" level="project" />
   </component>
 </module>

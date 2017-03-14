@@ -15,7 +15,6 @@ public class DriveSubsystem extends Subsystem {
 
 
 	protected void initDefaultCommand() {
-		// Set the default command for a subsystem here.
 		setDefaultCommand(new DriveCommand());
 
 
@@ -60,7 +59,7 @@ public class DriveSubsystem extends Subsystem {
 		}
 	}
 
-
+/*
 	public void DriveRobot(double Leftspeed, double Rightspeed) {
 
 
@@ -149,7 +148,7 @@ public class DriveSubsystem extends Subsystem {
 		}
 
 	}
-
+*/
 
 	public void TurnLeft(double Leftspeed, double Rightspeed) {
 		tank(-Leftspeed, Rightspeed);

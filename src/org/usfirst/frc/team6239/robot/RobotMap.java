@@ -21,10 +21,10 @@ public class RobotMap {
     // public static int rangefinderPort = 1;
     // public static int rangefinderModule = 1;
 
-	public static int LeftTalon1 = 3;
-	public static int LeftTalon2 = 2;
-	public static int RightTalon1 = 0;
-	public static int RightTalon2 = 1;
+	public static int LeftMotor1 = 3;
+	public static int LeftMotor2 = 2;
+	public static int RightMotor1 = 0;
+	public static int RightMotor2 = 1;
 	public static int DumpTalonPort = 0;
 	public static int RearDumpTalonPort = 3;
 	public static int RollerTal = 1;
@@ -41,19 +41,20 @@ public class RobotMap {
 	
 	public CANTalon DumpTalon;
 	public CANTalon RearDumpTalon;
+	public CANTalon RollerAccelTal;
+	public CANTalon RollerGrabTal;
 	public Spark LeftController1;
 	public Spark LeftController2;
 	public Spark RightController1;
 	public Spark RightController2;
-	public CANTalon RollerAccelTal;
-	public CANTalon RollerGrabTal;
+
 	
 	public RobotMap() {
 		RearDumpTalon = new CANTalon(RearDumpTalonPort);
-		LeftController1 = new Spark(LeftTalon1);
-		LeftController2 = new Spark(LeftTalon2);
-		RightController1 = new Spark(RightTalon1);
-		RightController2 = new Spark(RightTalon2);
+		LeftController1 = new Spark(LeftMotor1);
+		LeftController2 = new Spark(LeftMotor2);
+		RightController1 = new Spark(RightMotor1);
+		RightController2 = new Spark(RightMotor2);
 		DumpTalon = new CANTalon(DumpTalonPort);
 		RollerAccelTal = new CANTalon(RollerTal);
 		RollerGrabTal = new CANTalon(RollerGrab);
