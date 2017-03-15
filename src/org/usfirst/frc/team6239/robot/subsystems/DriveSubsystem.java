@@ -34,28 +34,15 @@ public class DriveSubsystem extends Subsystem {
 
 	public void arcade(double Leftspeed, double Rightspeed) {
 		if (Rightspeed > 0.0) {
-
-			Robot.robotmap.LeftController1.set(Leftspeed + Rightspeed);
-			Robot.robotmap.LeftController2.set(Leftspeed + Rightspeed);
-			Robot.robotmap.RightController1.set(-(Leftspeed + Rightspeed));
-			Robot.robotmap.RightController2.set(-(Leftspeed + Rightspeed));
+			tank((Leftspeed + Rightspeed),-(Leftspeed + Rightspeed));
 
 		} else {
 
 			if (Rightspeed < 0.0) {
-
-				Robot.robotmap.LeftController1.set(Rightspeed - Leftspeed);
-				Robot.robotmap.LeftController2.set(Rightspeed - Leftspeed);
-				Robot.robotmap.RightController1.set(Leftspeed + Math.abs(Rightspeed));
-				Robot.robotmap.RightController2.set(Leftspeed + Math.abs(Rightspeed));
+				tank((Rightspeed - Leftspeed),(Leftspeed + Math.abs(Rightspeed)));
 
 			} else {
-
-				Robot.robotmap.LeftController1.set(Leftspeed);
-				Robot.robotmap.LeftController2.set(Leftspeed);
-				Robot.robotmap.RightController1.set(Leftspeed);
-				Robot.robotmap.RightController2.set(Leftspeed);
-
+				tank(Leftspeed,Leftspeed);
 			}
 		}
 	}
@@ -67,41 +54,10 @@ public class DriveSubsystem extends Subsystem {
 		if (joystick = true) {
 
 			if (arcade = true) {
-
-				// ---- Arcade Drive ---- \\
-				if (Rightspeed > 0.0) {
-
-					Robot.robotmap.LeftController1.set(Leftspeed + Rightspeed);
-					Robot.robotmap.LeftController2.set(Leftspeed + Rightspeed);
-					Robot.robotmap.RightController1.set(-(Leftspeed + Rightspeed));
-					Robot.robotmap.RightController2.set(-(Leftspeed + Rightspeed));
-
-				} else {
-
-					if (Rightspeed < 0.0) {
-
-						Robot.robotmap.LeftController1.set(Rightspeed - Leftspeed);
-						Robot.robotmap.LeftController2.set(Rightspeed - Leftspeed);
-						Robot.robotmap.RightController1.set(Leftspeed + Math.abs(Rightspeed));
-						Robot.robotmap.RightController2.set(Leftspeed + Math.abs(Rightspeed));
-
-					} else {
-
-						Robot.robotmap.LeftController1.set(Leftspeed);
-						Robot.robotmap.LeftController2.set(Leftspeed);
-						Robot.robotmap.RightController1.set(Leftspeed);
-						Robot.robotmap.RightController2.set(Leftspeed);
-
-					}
-				}
-
+				arcade(Leftspeed,Rightspeed);
 			} else {
 
-				// ---- Tank Drive ---- \\
-				Robot.robotmap.LeftController1.set(Leftspeed);
-				Robot.robotmap.LeftController2.set(Leftspeed);
-				Robot.robotmap.RightController1.set(Rightspeed);
-				Robot.robotmap.RightController2.set(Rightspeed);
+			tank(Leftspeed,Rightspeed);
 
 			}
 
@@ -109,41 +65,11 @@ public class DriveSubsystem extends Subsystem {
 
 			if (arcade = true) {
 
-				// ---- Arcade Drive ---- \\
-				if (Rightspeed > 0.0) {
-
-					Robot.robotmap.LeftController1.set(Leftspeed + Rightspeed);
-					Robot.robotmap.LeftController2.set(Leftspeed + Rightspeed);
-					Robot.robotmap.RightController1.set(-(Leftspeed + Rightspeed));
-					Robot.robotmap.RightController2.set(-(Leftspeed + Rightspeed));
-
-				} else {
-
-					if (Rightspeed < 0.0) {
-
-						Robot.robotmap.LeftController1.set(Rightspeed - Leftspeed);
-						Robot.robotmap.LeftController2.set(Rightspeed - Leftspeed);
-						Robot.robotmap.RightController1.set(Leftspeed + Math.abs(Rightspeed));
-						Robot.robotmap.RightController2.set(Leftspeed + Math.abs(Rightspeed));
-
-					} else {
-
-						Robot.robotmap.LeftController1.set(Leftspeed);
-						Robot.robotmap.LeftController2.set(Leftspeed);
-						Robot.robotmap.RightController1.set(Leftspeed);
-						Robot.robotmap.RightController2.set(Leftspeed);
-
-					}
-				}
+			arcade(Leftspeed,Rightspeed);
 
 			} else {
 
-				// ---- Tank Drive ---- \\
-				Robot.robotmap.LeftController1.set(Leftspeed);
-				Robot.robotmap.LeftController2.set(Leftspeed);
-				Robot.robotmap.RightController1.set(Rightspeed);
-				Robot.robotmap.RightController2.set(Rightspeed);
-
+			tank(Leftspeed,Rightspeed);
 			}
 
 		}
@@ -151,13 +77,6 @@ public class DriveSubsystem extends Subsystem {
 	}
 
 
-	public void TurnLeft(double Leftspeed, double Rightspeed) {
-		tank(-Leftspeed, Rightspeed);
-	}
-
-	public void TurnRight(double Leftspeed, double Rightspeed) {
-		tank(Leftspeed, -Rightspeed);
-	}
 }
 
 

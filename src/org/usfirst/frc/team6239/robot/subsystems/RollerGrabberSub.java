@@ -16,13 +16,13 @@ public class RollerGrabberSub extends Subsystem {
         setDefaultCommand(new RollerGrabberCommand());
     }
     public void RollerFront() {
-        System.out.println(Robot.robotmap.dumperUp + " " + !Robot.robotmap.driving);
+
 
 
             if (Robot.robotmap.dumperUp) {
                 RollerBack();
             } else {
-                if (Robot.robotmap.driving) {
+                if (Robot.oi.isMoving()) {
                     Robot.robotmap.RollerGrabTal.set(-1);
 
                 } else {

@@ -1,6 +1,9 @@
 package org.usfirst.frc.team6239.robot;
 
-import edu.wpi.first.wpilibj.Joystick; 
+import com.kauailabs.navx.frc.AHRS;
+import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.I2C;
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
@@ -17,55 +20,6 @@ import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
  */
 public class OI {
 
-	public boolean isMoving() {
-//		if (Robot.oi.stickcontrolerL.getY() < -.05 && Robot.oi.stickcontrolerR.getY() < -.05) {
-//			return true;
-//		} else {
-//			return false;
-//		}
-		
-		
-		
-		if (Robot.oi.stickcontrolerL.getY()>0.5 && Robot.oi.stickcontrolerR.getY() >0.5){
-			return false;
-			
-		}else{
-			return true;
-		}
-
-	}
-
-
-
-    //// CREATING BUTTONS
-    // One type of button is a joystick button which is any button on a joystick.
-    // You create one by telling it which joystick it's on and which button
-    // number it is.
-    // Joystick stick = new Joystick(port);
-    // Button button = new JoystickButton(stick, buttonNumber);
-    
-    // There are a few additional built in buttons you can use. Additionally,
-    // by subclassing Button you can create custom triggers and bind those to
-    // commands the same as any other Button.
-    
-    //// TRIGGERING COMMANDS WITH BUTTONS
-    // Once you have a button, it's trivial to bind it to a 
-    // three ways:
-    
-    // Start the command when the button is pressed and let it run the command
-    // until it is finished as determined by it's isFinished method.
-    // button.whenPressed(new ExampleCommand());
-    
-    // Run the command while the button is being held down and interrupt it once
-    // the button is released.
-    // button.whileHeld(new ExampleCommand());
-    
-    // Start the command when the button is released  and let it run the command
-    // until it is finished as determined by it's isFinished method.
-    // button.whenReleased(new ExampleCommand());
-
-	//Button DumpUp;
-	// nButton DumpDown;
 	public Joystick gamepad;
 	public Button LeftJoystick;
 	public Button RightJoystick;
@@ -75,27 +29,52 @@ public class OI {
 	public Button CancelRoller;
 	public Button DumpUp;
 	public Button DumpDown;
-	
-	
+	public  DigitalInput limitswitch1;
+	public  DigitalInput limitswitch2;
+	public  DigitalInput limitswitch3;
+	public  DigitalInput limitswitch4;
+    public  AHRS ahrs;
+
 	public OI() {
 	
 		gamepad = new Joystick(0);
+
 		LeftJoystick = new JoystickButton(gamepad, 0);
-		RightJoystick = new JoystickButton(gamepad, 1); 
+		RightJoystick = new JoystickButton(gamepad, 1);
+
+
 		stickcontrolerL = new Joystick(1);
 		stickcontrolerR = new Joystick(2);
+
+
 		RollerGrab = new JoystickButton(stickcontrolerR, 1);
         RollerGrab.whileHeld(new RollerGrabberCommand());
+
+
     	DumpUp = new JoystickButton(stickcontrolerL,2);
 		DumpDown = new JoystickButton(stickcontrolerR,2);
-		try{
 		DumpUp.whenPressed(new DumpUpCommand());
 		DumpDown.whenPressed(new DumpDownCommand());
-		}catch(Exception e){
-			System.out.println(e);
-		}
-		
+
+
+		ahrs = new AHRS(I2C.Port.kMXP);
+
+
+		limitswitch1 = new DigitalInput(3);
+		limitswitch2 = new DigitalInput(2);
+		limitswitch3 = new DigitalInput(0);
+		limitswitch4 = new DigitalInput(1);
 		
 }
+    public boolean isMoving() {
+        return !(Robot.oi.stickcontrolerL.getY() > 0.05 && Robot.oi.stickcontrolerR.getY() > 0.05);
+    }
+    public void updateSensors(){
+        Robot.robotmap.limitswitch1 = limitswitch1.get();
+        Robot.robotmap.limitswitch2 = limitswitch2.get();
+        Robot.robotmap.limitswitch3 = limitswitch3.get();
+        Robot.robotmap.limitswitch4 = limitswitch4.get();
+
+    }
 
 }
