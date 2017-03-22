@@ -23,10 +23,10 @@ public class DriveSubsystem extends Subsystem {
 	public void tank(double Leftspeed, double Rightspeed) {
 
 
-		Robot.robotmap.LeftController1.set(-Leftspeed*.8);
-		Robot.robotmap.LeftController2.set(-Leftspeed*.8);
-		Robot.robotmap.RightController1.set(Rightspeed*.8);
-		Robot.robotmap.RightController2.set(Rightspeed*.8);
+		Robot.robotmap.LeftController1.set(-Leftspeed);
+		Robot.robotmap.LeftController2.set(-Leftspeed);
+		Robot.robotmap.RightController1.set(Rightspeed);
+		Robot.robotmap.RightController2.set(Rightspeed);
 
 
 	}
@@ -52,12 +52,7 @@ public class DriveSubsystem extends Subsystem {
 		return this.initialRotation;
 	}
 	public boolean AutoDriveCheck(double rotations){
-		if((Robot.oi.EncoderValue() - getInitialDegree())>= rotations){
-
-return true;
-
-		}
-return false;
+		return (Robot.oi.EncoderValue() - getInitialDegree()) >= rotations;
 
 	}
 

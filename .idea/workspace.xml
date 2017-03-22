@@ -1,36 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e056212-5ad8-46cc-acaf-bfdad8745189" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/org/usfirst/frc/team6239/robot/OI.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/org/usfirst/frc/team6239/robot/Robot.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/org/usfirst/frc/team6239/robot/RobotMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/OI.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/Robot.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/RobotMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/DriveCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/DumpDownCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/DumpUpCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/RollerAccelCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/RollerGrabberCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/VisionCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/DumpLiftSub.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/RollerAccelerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/RollerGrabberSub.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/VisionSub$DriveConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/VisionSub.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/AutoCommandGroup.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/DriveRobot.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/DriveRobot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/TurnRobot.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/TurnRobot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jars/NetworkTables.jar" afterPath="$PROJECT_DIR$/build/jars/NetworkTables.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jars/WPILib.jar" afterPath="$PROJECT_DIR$/build/jars/WPILib.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jars/cscore.jar" afterPath="$PROJECT_DIR$/build/jars/cscore.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/FRCUserProgram.jar" afterPath="$PROJECT_DIR$/dist/FRCUserProgram.jar" />
+    <list default="true" id="2e056212-5ad8-46cc-acaf-bfdad8745189" name="Default" comment="competition">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/AutoCommandGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/AutoLeft.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/AutoMid.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/AutoRight.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/ClimbCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/Climer_Sub.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java" />
     </list>
@@ -49,33 +27,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DumpDownCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DumpDownCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RollerGrabberCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/RollerGrabberCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RobotMap.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RobotMap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="328">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
-                <marker date="1489712328000" expanded="true" signature="1981:2033" ph="{...}" />
+                <element signature="e#0#1496#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <marker date="1490225988159" expanded="true" signature="1494:1496" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -84,48 +44,8 @@
       <file leaf-file-name="DriveSubsystem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
-              <caret line="129" column="41" lean-forward="false" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Robot.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriveRobot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/DriveRobot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TurnRobot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/TurnRobot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,7 +84,6 @@
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/TurnRobot.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DumpLiftSub.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/AutoCommandGroup.java" />
-        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/AutoCommandGroup.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DriveRobot.java" />
@@ -172,8 +91,9 @@
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/DriveRobot.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/AutoCommandGroup.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/TurnRobot.java" />
-        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java" />
       </list>
     </option>
   </component>
@@ -619,6 +539,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
@@ -834,7 +761,7 @@
       <workItem from="1490219408364" duration="278000" />
       <workItem from="1490220456677" duration="628000" />
       <workItem from="1490222135186" duration="40000" />
-      <workItem from="1490224664184" duration="62000" />
+      <workItem from="1490224664184" duration="1349000" />
     </task>
     <task id="LOCAL-00001" summary="motor rename">
       <created>1487450786829</created>
@@ -885,11 +812,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489708002503</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Cleaned up">
+      <created>1490224831864</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490224831864</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44619000" />
+    <option name="totallyTimeSpent" value="45906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -908,7 +842,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19838946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19838946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1251,16 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <marker date="1489712328000" expanded="true" signature="1981:2033" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/MEGA/workspace/AutoExample/bin/org/usfirst/frc/team6239/robot/AutoCommands/AutoCommandGroup.class" />
     <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1296,14 +1220,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/ClimbCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="129" column="41" lean-forward="false" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/MEGA/workspace/RobotDrive/bin/org/usfirst/frc/team6239/robot/Robot.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1313,9 +1229,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+        <state relative-caret-position="1535">
+          <caret line="122" column="43" lean-forward="false" selection-start-line="122" selection-start-column="43" selection-end-line="122" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1496#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1490225988159" expanded="true" signature="1494:1496" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
