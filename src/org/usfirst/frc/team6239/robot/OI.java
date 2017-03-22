@@ -1,12 +1,17 @@
 package org.usfirst.frc.team6239.robot;
 
 import com.kauailabs.navx.frc.AHRS;
+
+import edu.wpi.first.wpilibj.CounterBase.EncodingType;
 import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.I2C;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
+import org.usfirst.frc.team6239.robot.commands.ClimbCommand;
 import org.usfirst.frc.team6239.robot.commands.DumpDownCommand;
 import org.usfirst.frc.team6239.robot.commands.DumpUpCommand;
 
@@ -20,6 +25,8 @@ import org.usfirst.frc.team6239.robot.subsystems.RollerGrabberSub;
  */
 public class OI {
 
+	
+	public Button ClimberControl;
 	public Joystick gamepad;
 	public Button LeftJoystick;
 	public Button RightJoystick;
@@ -34,8 +41,14 @@ public class OI {
 	public  DigitalInput limitswitch3;
 	public  DigitalInput limitswitch4;
     public  AHRS ahrs;
+	public Encoder encoderL;
+	public Encoder encoderR;
 
 	public OI() {
+		encoderL = new Encoder(4,5);
+		encoderR = new Encoder(6,7 );
+//		encoderL.reset();
+//		encoderR.reset();
 	
 		gamepad = new Joystick(0);
 
@@ -53,10 +66,12 @@ public class OI {
 
     	DumpUp = new JoystickButton(stickcontrolerL,2);
 		DumpDown = new JoystickButton(stickcontrolerR,2);
-		DumpUp.whenPressed(new DumpUpCommand());
-		DumpDown.whenPressed(new DumpDownCommand());
+	//	DumpUp.whenPressed(new DumpUpCommand());
+		//DumpDown.whenPressed(new DumpDownCommand());
 
-
+		ClimberControl = new JoystickButton(stickcontrolerL,3);
+        ClimberControl.whileHeld(new ClimbCommand());
+        
 		ahrs = new AHRS(I2C.Port.kMXP);
 
 
@@ -66,6 +81,7 @@ public class OI {
 		limitswitch4 = new DigitalInput(1);
 		
 }
+	
     public boolean isMoving() {
         return !(Robot.oi.stickcontrolerL.getY() > 0.05 && Robot.oi.stickcontrolerR.getY() > 0.05);
     }
@@ -77,4 +93,28 @@ public class OI {
 
     }
 
+    public int EncoderLeft() {
+        
+        return encoderL.get();
+        
+       
+       }
+       public int EncoderRight(){
+       
+       return encoderR.get();
+       
+       }
+      public int EncoderValue(){
+       
+    	int EncoderVal = (EncoderLeft() + EncoderRight()) / 2;
+    	SmartDashboard.putNumber("Encoder", EncoderRight());
+    	  System.out.println(EncoderLeft()+" "+EncoderRight());
+    encoderL.getStopped();
+    encoderR.getStopped();
+    System.out.println(encoderL.getStopped());
+    System.out.println(encoderR.getStopped());
+    
+    	  return EncoderVal;
+       
+      }
 }

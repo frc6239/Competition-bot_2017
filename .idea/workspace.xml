@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e056212-5ad8-46cc-acaf-bfdad8745189" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/org/usfirst/frc/team6239/robot/OI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/org/usfirst/frc/team6239/robot/Robot.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/org/usfirst/frc/team6239/robot/RobotMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/OI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/Robot.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/RobotMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/DriveCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/DumpDownCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/DumpUpCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/RollerAccelCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/RollerGrabberCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/commands/VisionCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/DumpLiftSub.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/RollerAccelerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/RollerGrabberSub.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/VisionSub$DriveConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/org/usfirst/frc/team6239/robot/subsystems/VisionSub.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/AutoCommandGroup.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/DriveRobot.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/DriveRobot.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/TurnRobot.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/TurnRobot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jars/NetworkTables.jar" afterPath="$PROJECT_DIR$/build/jars/NetworkTables.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jars/WPILib.jar" afterPath="$PROJECT_DIR$/build/jars/WPILib.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jars/cscore.jar" afterPath="$PROJECT_DIR$/build/jars/cscore.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/FRCUserProgram.jar" afterPath="$PROJECT_DIR$/dist/FRCUserProgram.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java" afterPath="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
@@ -19,30 +49,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DumpLiftSub.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DumpLiftSub.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1489614276735" expanded="true" signature="1644:1732" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DumpDownCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DumpDownCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#965#966#0" expanded="false" />
-                <element signature="e#983#984#0" expanded="false" />
-                <marker date="1489614270435" expanded="true" signature="543:546" ph="{...}" />
-              </folding>
+            <state relative-caret-position="527">
+              <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,28 +64,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#347#348#0" expanded="false" />
-                <element signature="e#390#391#0" expanded="false" />
-                <element signature="e#417#418#0" expanded="false" />
-                <element signature="e#454#455#0" expanded="false" />
-                <element signature="e#505#506#0" expanded="false" />
-                <element signature="e#533#534#0" expanded="false" />
-                <element signature="e#561#562#0" expanded="false" />
-                <element signature="e#608#609#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RobotMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RobotMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+            <state relative-caret-position="1037">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <marker date="1489712328000" expanded="true" signature="1981:2033" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -82,79 +84,49 @@
       <file leaf-file-name="DriveSubsystem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutoCommandGroup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/AutoCommandGroup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="2125">
+              <caret line="129" column="41" lean-forward="false" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Robot.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Robot.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="481">
+              <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DriveRobot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/DriveRobot.java">
+        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/DriveRobot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#302#303#0" expanded="false" />
-                <element signature="e#343#344#0" expanded="false" />
-                <element signature="e#555#556#0" expanded="false" />
-                <element signature="e#583#584#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="TurnRobot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/TurnRobot.java">
+        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/TurnRobot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#247#248#0" expanded="false" />
-                <element signature="e#280#281#0" expanded="false" />
-                <element signature="e#491#492#0" expanded="false" />
-                <element signature="e#519#520#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriveCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DriveCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#581#582#0" expanded="false" />
-                <element signature="e#609#610#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,18 +156,24 @@
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DriveCommand.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/RollerGrab.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/RollerGrabberCommand.java" />
-        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/VisionSub.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DumpUpCommand.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DumpDownCommand.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/RollerGrabberSub.java" />
-        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java" />
-        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/DriveRobot.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/TurnRobot.java" />
-        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DumpLiftSub.java" />
         <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/AutoCommandGroup.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/AutoCommandGroup.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DriveRobot.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/TurnRobot.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/DriveRobot.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/AutoCommandGroup.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/TurnRobot.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java" />
+        <option value="$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java" />
       </list>
     </option>
   </component>
@@ -227,6 +205,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,14 +299,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AutoCommands" />
+              <option name="myItemId" value="AutoCommand" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,6 +321,8 @@
     <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -673,12 +653,53 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -731,10 +752,42 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
       <method />
     </configuration>
   </component>
@@ -771,7 +824,17 @@
       <workItem from="1489615614299" duration="726000" />
       <workItem from="1489618993523" duration="3255000" />
       <workItem from="1489681127450" duration="370000" />
-      <workItem from="1489706917576" duration="1046000" />
+      <workItem from="1489706917576" duration="2097000" />
+      <workItem from="1489715323875" duration="4746000" />
+      <workItem from="1489720303794" duration="1888000" />
+      <workItem from="1489788007705" duration="425000" />
+      <workItem from="1489841536287" duration="28000" />
+      <workItem from="1489846307712" duration="632000" />
+      <workItem from="1490144620725" duration="916000" />
+      <workItem from="1490219408364" duration="278000" />
+      <workItem from="1490220456677" duration="628000" />
+      <workItem from="1490222135186" duration="40000" />
+      <workItem from="1490224664184" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="motor rename">
       <created>1487450786829</created>
@@ -815,15 +878,21 @@
       <option name="project" value="LOCAL" />
       <updated>1489616303166</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cleaned up">
+      <created>1489708002503</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1489708002503</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33925000" />
+    <option name="totallyTimeSpent" value="44619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -839,7 +908,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19912152" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19838946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -851,6 +920,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -906,47 +976,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/AutoCommandGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/DriveRobot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#302#303#0" expanded="false" />
-            <element signature="e#343#344#0" expanded="false" />
-            <element signature="e#555#556#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/TurnRobot.java">
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/TurnRobot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#247#248#0" expanded="false" />
-            <element signature="e#280#281#0" expanded="false" />
-            <element signature="e#491#492#0" expanded="false" />
-            <element signature="e#519#520#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -954,9 +988,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="67" column="63" lean-forward="true" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -981,9 +1013,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -991,9 +1021,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,7 +1038,7 @@
           <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1489614276735" expanded="true" signature="1644:1732" ph="{...}" />
+            <marker date="1489614278000" expanded="true" signature="1644:1732" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1033,9 +1061,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
           <caret line="83" column="74" lean-forward="true" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,7 +1078,7 @@
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1489614276735" expanded="true" signature="1644:1732" ph="{...}" />
+            <marker date="1489614278000" expanded="true" signature="1644:1732" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1061,9 +1087,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,12 +1110,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#983#984#0" expanded="false" />
-            <marker date="1489614270435" expanded="true" signature="543:546" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,7 +1127,7 @@
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1489614276735" expanded="true" signature="1644:1732" ph="{...}" />
+            <marker date="1489614278000" expanded="true" signature="1644:1732" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1117,9 +1136,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,12 +1159,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#983#984#0" expanded="false" />
-            <marker date="1489614270435" expanded="true" signature="543:546" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,7 +1176,7 @@
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1489614276735" expanded="true" signature="1644:1732" ph="{...}" />
+            <marker date="1489614278000" expanded="true" signature="1644:1732" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1188,12 +1200,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#983#984#0" expanded="false" />
-            <marker date="1489614270435" expanded="true" signature="543:546" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,77 +1220,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DumpLiftSub.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1489614276735" expanded="true" signature="1644:1732" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/AutoCommandGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/DriveRobot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#302#303#0" expanded="false" />
-            <element signature="e#343#344#0" expanded="false" />
-            <element signature="e#555#556#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommands/TurnRobot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#247#248#0" expanded="false" />
-            <element signature="e#280#281#0" expanded="false" />
-            <element signature="e#491#492#0" expanded="false" />
-            <element signature="e#519#520#0" expanded="false" />
+            <marker date="1489614278000" expanded="true" signature="1644:1732" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1300,44 +1243,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DumpDownCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#983#984#0" expanded="false" />
-            <marker date="1489614270435" expanded="true" signature="543:546" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/RollerGrabberCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#347#348#0" expanded="false" />
-            <element signature="e#390#391#0" expanded="false" />
-            <element signature="e#417#418#0" expanded="false" />
-            <element signature="e#454#455#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#533#534#0" expanded="false" />
-            <element signature="e#561#562#0" expanded="false" />
-            <element signature="e#608#609#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/RobotMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        <state relative-caret-position="1037">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1489712328000" expanded="true" signature="1981:2033" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/MEGA/workspace/AutoExample/bin/org/usfirst/frc/team6239/robot/AutoCommands/AutoCommandGroup.class" />
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/OI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/TurnRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/AutoCommandGroup.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/AutoCommand/DriveRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/DumpDownCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/commands/ClimbCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/subsystems/DriveSubsystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="129" column="41" lean-forward="false" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/MEGA/workspace/RobotDrive/bin/org/usfirst/frc/team6239/robot/Robot.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/usfirst/frc/team6239/robot/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

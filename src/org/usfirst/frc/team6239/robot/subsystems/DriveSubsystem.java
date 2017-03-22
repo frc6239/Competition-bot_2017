@@ -23,10 +23,10 @@ public class DriveSubsystem extends Subsystem {
 	public void tank(double Leftspeed, double Rightspeed) {
 
 
-		Robot.robotmap.LeftController1.set(-Leftspeed*.5);
-		Robot.robotmap.LeftController2.set(-Leftspeed*.5);
-		Robot.robotmap.RightController1.set(Rightspeed*.5);
-		Robot.robotmap.RightController2.set(Rightspeed*.5);
+		Robot.robotmap.LeftController1.set(-Leftspeed*.8);
+		Robot.robotmap.LeftController2.set(-Leftspeed*.8);
+		Robot.robotmap.RightController1.set(Rightspeed*.8);
+		Robot.robotmap.RightController2.set(Rightspeed*.8);
 
 
 	}
@@ -45,6 +45,69 @@ public class DriveSubsystem extends Subsystem {
 			}
 		}
 	}
+
+	private double initialRotation;
+	public void setInitialRotation(double initRot){this.initialRotation= initRot;}
+	public double getInitialRotation(){
+		return this.initialRotation;
+	}
+	public boolean AutoDriveCheck(double rotations){
+		if((Robot.oi.EncoderValue() - getInitialDegree())>= rotations){
+
+return true;
+
+		}
+return false;
+
+	}
+
+
+private double initialDegree;
+public void setInitialDegree(double initialDeg){this.initialDegree = initialDeg;}
+public double getInitialDegree(){ return this.initialDegree;}
+
+private boolean isDone;
+public void setIsDone(boolean done){this.isDone = done;}
+public boolean getIsDone(){return this.isDone;}
+public void TurnRobot(double degrees, double direction){
+		if(Robot.oi.ahrs.getRawAccelX() - getInitialDegree() >= degrees){
+		    if (direction >0){
+		        tank(1,-1);
+
+            }else {
+		        tank(-1,1);
+            }
+
+
+
+        }else{setIsDone(true);}
+        	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 	public void DriveRobot(double Leftspeed, double Rightspeed) {
