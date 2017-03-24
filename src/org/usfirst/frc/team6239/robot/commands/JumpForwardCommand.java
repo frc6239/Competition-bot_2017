@@ -7,9 +7,9 @@ import edu.wpi.first.wpilibj.command.Command;
 
 public class JumpForwardCommand extends Command{
 	
-	public JumpForwardCommand() {
+	public JumpForwardCommand(double timeout) {
 		requires(Robot.DRIVE_SUB);
-	    setTimeout(0.75); // NEED EXPERIMENTALLY CHOSEN VALUE !!!
+	    setTimeout(timeout); // NEED EXPERIMENTALLY CHOSEN VALUE !!!
 	}
 
 	@Override
@@ -45,3 +45,4 @@ public class JumpForwardCommand extends Command{
     	end();
     }
 }
+

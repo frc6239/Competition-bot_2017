@@ -14,6 +14,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc.team6239.robot.commands.ClimbCommand;
 import org.usfirst.frc.team6239.robot.commands.DumpDownCommand;
 import org.usfirst.frc.team6239.robot.commands.DumpUpCommand;
+import org.usfirst.frc.team6239.robot.commands.MoveLeftAuto;
+import org.usfirst.frc.team6239.robot.commands.MoveRightAuto;
 
 import edu.wpi.first.wpilibj.buttons.Button;
 import org.usfirst.frc.team6239.robot.commands.RollerGrabberCommand;
@@ -36,6 +38,8 @@ public class OI {
 	public Button CancelRoller;
 	public Button DumpUp;
 	public Button DumpDown;
+	public Button MoveLeft;
+	public Button MoveRight;
 	public  DigitalInput limitswitch1;
 	public  DigitalInput limitswitch2;
 	public  DigitalInput limitswitch3;
@@ -66,6 +70,14 @@ public class OI {
 
     	DumpUp = new JoystickButton(stickcontrolerL,2);
 		DumpDown = new JoystickButton(stickcontrolerR,2);
+		
+		
+		MoveLeft = new JoystickButton(stickcontrolerR,3);
+		MoveRight = new JoystickButton(stickcontrolerR,6);
+		
+		
+		MoveLeft.whenPressed(new MoveLeftAuto());
+		MoveRight.whenPressed(new MoveRightAuto());
 	//	DumpUp.whenPressed(new DumpUpCommand());
 		//DumpDown.whenPressed(new DumpDownCommand());
 

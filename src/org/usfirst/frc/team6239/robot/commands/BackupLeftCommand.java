@@ -7,9 +7,9 @@ import edu.wpi.first.wpilibj.command.Command;
 
 public class BackupLeftCommand extends Command{
 	
-	public BackupLeftCommand() {
+	public BackupLeftCommand(double timeout) {
 		requires(Robot.DRIVE_SUB);
-	    setTimeout(0.5); // NEED EXPERIMENTALLY CHOSEN VALUE !!!
+	    setTimeout(timeout); // NEED EXPERIMENTALLY CHOSEN VALUE !!!
 	}
 
 	@Override
