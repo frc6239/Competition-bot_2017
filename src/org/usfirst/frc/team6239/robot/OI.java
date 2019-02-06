@@ -10,7 +10,6 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
 import org.usfirst.frc.team6239.robot.commands.ClimbCommand;
 import org.usfirst.frc.team6239.robot.commands.DumpDownCommand;
 import org.usfirst.frc.team6239.robot.commands.DumpUpCommand;
@@ -46,8 +45,11 @@ public class OI {
 	public  DigitalInput limitswitch4;
     public  AHRS ahrs;
 	public Encoder encoderL;
-	public Encoder encoderR;
-
+	public Encoder encoderR;	public DigitalInput limitswitch1;
+	public DigitalInput limitswitch2;
+	public DigitalInput limitswitch3;
+	public DigitalInput limitswitch4;
+    public AHRS ahrs;
 	public OI() {
 		encoderL = new Encoder(4,5);
 		encoderR = new Encoder(6,7 );
@@ -70,20 +72,10 @@ public class OI {
 
     	DumpUp = new JoystickButton(stickcontrolerL,2);
 		DumpDown = new JoystickButton(stickcontrolerR,2);
-		
-		
-		MoveLeft = new JoystickButton(stickcontrolerR,3);
-		MoveRight = new JoystickButton(stickcontrolerR,6);
-		
-		
-		MoveLeft.whenPressed(new MoveLeftAuto());
-		MoveRight.whenPressed(new MoveRightAuto());
-	//	DumpUp.whenPressed(new DumpUpCommand());
-		//DumpDown.whenPressed(new DumpDownCommand());
+		DumpUp.whenPressed(new DumpUpCommand());
+		DumpDown.whenPressed(new DumpDownCommand());
 
-		ClimberControl = new JoystickButton(stickcontrolerL,3);
-        ClimberControl.whileHeld(new ClimbCommand());
-        
+
 		ahrs = new AHRS(I2C.Port.kMXP);
 
 
